@@ -1,0 +1,163 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"38 C:\Users\ivan-\Documents\MPLAB\testlcd.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"69
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"85
+[v _output_data output_data `(v  1 e 1 0 ]
+"89
+[v _send_nibble send_nibble `(v  1 e 1 0 ]
+"100
+[v _send_byte send_byte `(v  1 e 1 0 ]
+"104
+[v _set_sgram_char set_sgram_char `(v  1 e 1 0 ]
+"115
+[v _setup setup `(v  1 e 1 0 ]
+"121
+[v _dic dic `(v  1 e 1 0 ]
+"125
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+"2971 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3183
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+[s S66 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3206
+[s S73 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+[u S80 . 1 `S66 1 . 1 0 `S73 1 . 1 0 ]
+[v _LATCbits LATCbits `VES80  1 e 1 @3979 ]
+"3261
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3425
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3845
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"3999
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"5585
+[v _CMCON CMCON `VEuc  1 e 1 @4020 ]
+"6579
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"15 C:\Users\ivan-\Documents\MPLAB\testlcd.X\main.c
+[v _INIT_STRING INIT_STRING `C[4]ui  1 e 8 0 ]
+"21
+[v _anima anima `[3][8]uc  1 e 24 0 ]
+"38
+[v _main main `(v  1 e 1 0 ]
+{
+"60
+[v main@j j `i  1 a 2 26 ]
+"40
+[v main@my_name my_name `[13]uc  1 a 13 13 ]
+"41
+[v main@i i `uc  1 a 1 28 ]
+"39
+[v main@F3814 F3814 `[13]uc  1 s 13 F3814 ]
+"68
+} 0
+"115
+[v _setup setup `(v  1 e 1 0 ]
+{
+"120
+} 0
+"104
+[v _set_sgram_char set_sgram_char `(v  1 e 1 0 ]
+{
+[v set_sgram_char@dir dir `uc  1 a 1 wreg ]
+"105
+[v set_sgram_char@i i `uc  1 a 1 10 ]
+"104
+[v set_sgram_char@dir dir `uc  1 a 1 wreg ]
+[v set_sgram_char@ptr ptr `*.39uc  1 p 2 7 ]
+"107
+[v set_sgram_char@dir dir `uc  1 a 1 9 ]
+"114
+} 0
+"69
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"70
+[v lcd_init@i i `uc  1 a 1 8 ]
+"84
+} 0
+"85
+[v _output_data output_data `(v  1 e 1 0 ]
+{
+[v output_data@data data `uc  1 a 1 wreg ]
+[v output_data@data data `uc  1 a 1 wreg ]
+[v output_data@data data `uc  1 a 1 0 ]
+"88
+} 0
+"125
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+{
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+"127
+[v lcd_gotoxy@address address `uc  1 a 1 11 ]
+"125
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v lcd_gotoxy@y y `uc  1 p 1 7 ]
+"129
+[v lcd_gotoxy@x x `uc  1 a 1 8 ]
+"133
+} 0
+"100
+[v _send_byte send_byte `(v  1 e 1 0 ]
+{
+[v send_byte@comand comand `uc  1 a 1 wreg ]
+[v send_byte@comand comand `uc  1 a 1 wreg ]
+[v send_byte@data data `uc  1 p 1 5 ]
+[v send_byte@comand comand `uc  1 a 1 6 ]
+"103
+} 0
+"89
+[v _send_nibble send_nibble `(v  1 e 1 0 ]
+{
+[v send_nibble@comand comand `uc  1 a 1 wreg ]
+[v send_nibble@comand comand `uc  1 a 1 wreg ]
+[v send_nibble@data data `uc  1 p 1 2 ]
+[v send_nibble@comand comand `uc  1 a 1 4 ]
+"99
+} 0
+"121
+[v _dic dic `(v  1 e 1 0 ]
+{
+[v dic@t t `ui  1 p 2 0 ]
+"124
+} 0

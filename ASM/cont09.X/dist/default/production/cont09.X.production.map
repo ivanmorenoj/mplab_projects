@@ -1,0 +1,67 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Mon Apr 02 22:47:15 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x001000    program   0x0000fe
+                   .cinit    romdata   0x0010fe    program   0x000002
+                   .org_1       code   0x001200    program   0x000010
+.config_300000_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x001000    0x0010ff      
+                            0x001200    0x00120f      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            284 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                DelayDisp   0x0010be    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+               DelayOneMs   0x0010ce    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                  Display   0x001068    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                cic0Delay   0x00101c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                    ciclo   0x001018    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+             config_ports   0x0010e4    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                 cycDelay   0x0010c2    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                     main   0x001000    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                     ret1   0x0010d2    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                     ret2   0x0010d6    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     main   0x001000    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                    ciclo   0x001018    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                cic0Delay   0x00101c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                  Display   0x001068    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                DelayDisp   0x0010be    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                 cycDelay   0x0010c2    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+               DelayOneMs   0x0010ce    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                     ret1   0x0010d2    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+                     ret2   0x0010d6    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+             config_ports   0x0010e4    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\cont09.X\main.asm
+
+

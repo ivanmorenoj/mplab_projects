@@ -1,0 +1,73 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Mon Apr 09 08:28:01 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x001000    program   0x0000e6
+                   .cinit    romdata   0x0010e6    program   0x000002
+                   .org_1       code   0x001200    program   0x000010
+.config_300000_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x001000    0x0010e7      
+                            0x001200    0x00120f      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            260 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                DelayDisp   0x0010a2    program     static D:\MPLAB\llenadoasm.X\main.asm
+               DelayOneMs   0x0010b2    program     static D:\MPLAB\llenadoasm.X\main.asm
+                  Display   0x00104c    program     static D:\MPLAB\llenadoasm.X\main.asm
+                cic0Delay   0x00101c    program     static D:\MPLAB\llenadoasm.X\main.asm
+                    ciclo   0x001018    program     static D:\MPLAB\llenadoasm.X\main.asm
+             config_ports   0x0010c8    program     static D:\MPLAB\llenadoasm.X\main.asm
+                 cycDelay   0x0010a6    program     static D:\MPLAB\llenadoasm.X\main.asm
+                   llenar   0x001036    program     static D:\MPLAB\llenadoasm.X\main.asm
+                     main   0x001000    program     static D:\MPLAB\llenadoasm.X\main.asm
+                       n2   0x001030    program     static D:\MPLAB\llenadoasm.X\main.asm
+                    parar   0x001040    program     static D:\MPLAB\llenadoasm.X\main.asm
+                     ret1   0x0010b6    program     static D:\MPLAB\llenadoasm.X\main.asm
+                     ret2   0x0010ba    program     static D:\MPLAB\llenadoasm.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     main   0x001000    program     static D:\MPLAB\llenadoasm.X\main.asm
+                    ciclo   0x001018    program     static D:\MPLAB\llenadoasm.X\main.asm
+                cic0Delay   0x00101c    program     static D:\MPLAB\llenadoasm.X\main.asm
+                       n2   0x001030    program     static D:\MPLAB\llenadoasm.X\main.asm
+                   llenar   0x001036    program     static D:\MPLAB\llenadoasm.X\main.asm
+                    parar   0x001040    program     static D:\MPLAB\llenadoasm.X\main.asm
+                  Display   0x00104c    program     static D:\MPLAB\llenadoasm.X\main.asm
+                DelayDisp   0x0010a2    program     static D:\MPLAB\llenadoasm.X\main.asm
+                 cycDelay   0x0010a6    program     static D:\MPLAB\llenadoasm.X\main.asm
+               DelayOneMs   0x0010b2    program     static D:\MPLAB\llenadoasm.X\main.asm
+                     ret1   0x0010b6    program     static D:\MPLAB\llenadoasm.X\main.asm
+                     ret2   0x0010ba    program     static D:\MPLAB\llenadoasm.X\main.asm
+             config_ports   0x0010c8    program     static D:\MPLAB\llenadoasm.X\main.asm
+
+

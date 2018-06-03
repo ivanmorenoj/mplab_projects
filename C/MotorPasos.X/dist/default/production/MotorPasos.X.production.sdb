@@ -1,0 +1,109 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"28 C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\MotorPasos.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"37
+[v _setup setup `(v  1 e 1 0 ]
+"41
+[v _delay delay `(v  1 e 1 0 ]
+"45
+[v _next_step next_step `(v  1 e 1 0 ]
+"49
+[v _move_step move_step `(v  1 e 1 0 ]
+"57
+[v _set_step set_step `(v  1 e 1 0 ]
+"61
+[v _full_turn full_turn `(v  1 e 1 0 ]
+"3071 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3623
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"16 C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\MotorPasos.X\main.c
+[v _complete_step complete_step `C[4]uc  1 e 4 0 ]
+"17
+[v _medium_step medium_step `C[8]uc  1 e 8 0 ]
+"19
+[v _Step Step `uc  1 e 1 0 ]
+"28
+[v _main main `(v  1 e 1 0 ]
+{
+"32
+[v main@i i `uc  1 a 1 32 ]
+"36
+} 0
+"37
+[v _setup setup `(v  1 e 1 0 ]
+{
+"40
+} 0
+"61
+[v _full_turn full_turn `(v  1 e 1 0 ]
+{
+[v full_turn@steps steps `l  1 p 4 24 ]
+"66
+} 0
+"49
+[v _move_step move_step `(v  1 e 1 0 ]
+{
+[v move_step@HowMany HowMany `l  1 p 4 19 ]
+[v move_step@type type `uc  1 p 1 23 ]
+"56
+} 0
+"45
+[v _next_step next_step `(v  1 e 1 0 ]
+{
+[v next_step@dir dir `uc  1 a 1 wreg ]
+[v next_step@dir dir `uc  1 a 1 wreg ]
+[v next_step@type type `uc  1 p 1 4 ]
+[v next_step@dir dir `uc  1 a 1 12 ]
+"48
+} 0
+"57
+[v _set_step set_step `(v  1 e 1 0 ]
+{
+[v set_step@type type `uc  1 a 1 wreg ]
+[v set_step@type type `uc  1 a 1 wreg ]
+[v set_step@type type `uc  1 a 1 1 ]
+"60
+} 0
+"41
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ul  1 p 4 0 ]
+"44
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0

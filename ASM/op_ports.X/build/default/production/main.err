@@ -1,0 +1,6 @@
+Warning[207] C:\USERS\IVAN-\DOCUMENTS\MPLAB\OP_PORTS.X\MAIN.ASM 98 : Found label after column 1. (ConfigPorts)
+Warning[207] C:\USERS\IVAN-\DOCUMENTS\MPLAB\OP_PORTS.X\MAIN.ASM 110 : Found label after column 1. (suma)
+Warning[207] C:\USERS\IVAN-\DOCUMENTS\MPLAB\OP_PORTS.X\MAIN.ASM 115 : Found label after column 1. (resta)
+Warning[207] C:\USERS\IVAN-\DOCUMENTS\MPLAB\OP_PORTS.X\MAIN.ASM 120 : Found label after column 1. (multipl)
+Warning[207] C:\USERS\IVAN-\DOCUMENTS\MPLAB\OP_PORTS.X\MAIN.ASM 125 : Found label after column 1. (division)
+Warning[205] C:\USERS\IVAN-\DOCUMENTS\MPLAB\OP_PORTS.X\MAIN.ASM 130 : Found directive in column 1. (end)

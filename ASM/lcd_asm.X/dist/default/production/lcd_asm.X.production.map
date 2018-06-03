@@ -1,0 +1,92 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Mon May 07 08:14:07 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .cinit    romdata   0x000000    program   0x000002
+                   .org_0       code   0x001000    program   0x00026c
+.config_300000_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000001      
+                            0x001000    0x00126b      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            634 out of 33048 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+              ConfigPorts   0x001160    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+               DelayOneMs   0x00113c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+               Delay_by_w   0x001130    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+            Delay_ms_by_w   0x001152    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                       c2   0x001076    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                       c3   0x001082    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                   cdelay   0x001154    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 cicDelay   0x001132    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 completo   0x00121c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                     fila   0x001014    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                   inicio   0x001000    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                  iniciot   0x00100e    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 lcd_init   0x001092    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+            lcd_send_byte   0x001120    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+          lcd_send_nibble   0x00110c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                  m_lleno   0x0011b4    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                  rebotes   0x001046    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 rebotes1   0x00104c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 rebotes2   0x001052    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 rebotes3   0x001058    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                     ret1   0x001140    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                     ret2   0x001144    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                    vacio   0x00117c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   inicio   0x001000    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                  iniciot   0x00100e    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                     fila   0x001014    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                  rebotes   0x001046    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 rebotes1   0x00104c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 rebotes2   0x001052    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 rebotes3   0x001058    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                       c2   0x001076    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                       c3   0x001082    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 lcd_init   0x001092    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+          lcd_send_nibble   0x00110c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+            lcd_send_byte   0x001120    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+               Delay_by_w   0x001130    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 cicDelay   0x001132    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+               DelayOneMs   0x00113c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                     ret1   0x001140    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                     ret2   0x001144    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+            Delay_ms_by_w   0x001152    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                   cdelay   0x001154    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+              ConfigPorts   0x001160    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                    vacio   0x00117c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                  m_lleno   0x0011b4    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+                 completo   0x00121c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\lcd_asm.X\main.asm
+
+

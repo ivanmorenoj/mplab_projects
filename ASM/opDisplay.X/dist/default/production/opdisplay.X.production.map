@@ -1,0 +1,53 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Mon Apr 02 00:53:15 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x001000    program   0x00003c
+                   .cinit    romdata   0x00103c    program   0x000002
+                   .org_1       code   0x001100    program   0x000010
+.config_300000_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x001000    0x00103d      
+                            0x001100    0x00110f      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            90 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    ciclo   0x001010    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\opDisplay.X\main.asm
+             config_ports   0x001022    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\opDisplay.X\main.asm
+                     main   0x001000    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\opDisplay.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     main   0x001000    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\opDisplay.X\main.asm
+                    ciclo   0x001010    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\opDisplay.X\main.asm
+             config_ports   0x001022    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\opDisplay.X\main.asm
+
+

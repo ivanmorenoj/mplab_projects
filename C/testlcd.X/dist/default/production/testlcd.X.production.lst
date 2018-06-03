@@ -1,0 +1,1523 @@
+
+
+Microchip Technology PIC18 LITE Macro Assembler V1.45 build -152302408 
+                                                                                               Fri Mar 23 02:01:08 2018
+
+Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
+     1                           	processor	18F4550
+     2                           	fnconf	rparam,??,?,0
+     3                           	opt	pw 120
+     4                           	opt	lm
+     5                           	psect	idataCOMRAM,global,class=CODE,delta=1,noexec
+     6                           	psect	smallconst,global,reloc=2,class=SMALLCONST,delta=1,noexec
+     7                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     8                           	psect	dataCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+     9                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+    10                           	psect	text0,global,reloc=2,class=CODE,delta=1
+    11                           	psect	text1,global,reloc=2,class=CODE,delta=1
+    12                           	psect	text2,global,reloc=2,class=CODE,delta=1
+    13                           	psect	text3,global,reloc=2,class=CODE,delta=1
+    14                           	psect	text4,global,reloc=2,class=CODE,delta=1
+    15                           	psect	text5,global,reloc=2,class=CODE,delta=1
+    16                           	psect	text6,global,reloc=2,class=CODE,delta=1
+    17                           	psect	text7,global,reloc=2,class=CODE,delta=1
+    18                           	psect	text8,global,reloc=2,class=CODE,delta=1
+    19                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
+    20                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
+    21  0000                     
+    22                           ; Version 1.45
+    23                           ; Generated 16/11/2017 GMT
+    24                           ; 
+    25                           ; Copyright © 2017, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    26                           ; All rights reserved.
+    27                           ; 
+    28                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    29                           ; 
+    30                           ; Redistribution and use in source and binary forms, with or without modification, are
+    31                           ; permitted provided that the following conditions are met:
+    32                           ; 
+    33                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    34                           ;        conditions and the following disclaimer.
+    35                           ; 
+    36                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    37                           ;        of conditions and the following disclaimer in the documentation and/or other
+    38                           ;        materials provided with the distribution.
+    39                           ; 
+    40                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    41                           ;        software without specific prior written permission.
+    42                           ; 
+    43                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    44                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    45                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    46                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    47                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    48                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    49                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    50                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    51                           ; 
+    52                           ; 
+    53                           ; Code-generator required, PIC18F4550 Definitions
+    54                           ; 
+    55                           ; SFR Addresses
+    56  0000                     
+    57                           	psect	idataCOMRAM
+    58  000A60                     __pidataCOMRAM:
+    59                           	opt stack 0
+    60                           
+    61                           ;initializer for main@F3814
+    62  000A60  49                 	db	73
+    63  000A61  76                 	db	118
+    64  000A62  61                 	db	97
+    65  000A63  6E                 	db	110
+    66  000A64  20                 	db	32
+    67  000A65  20                 	db	32
+    68  000A66  4D                 	db	77
+    69  000A67  6F                 	db	111
+    70  000A68  72                 	db	114
+    71  000A69  65                 	db	101
+    72  000A6A  6E                 	db	110
+    73  000A6B  6F                 	db	111
+    74  000A6C  00                 	db	0
+    75                           
+    76                           ;initializer for _anima
+    77  000A6D  0E                 	db	14
+    78  000A6E  11                 	db	17
+    79  000A6F  0E                 	db	14
+    80  000A70  15                 	db	21
+    81  000A71  0E                 	db	14
+    82  000A72  04                 	db	4
+    83  000A73  0A                 	db	10
+    84  000A74  11                 	db	17
+    85  000A75  0E                 	db	14
+    86  000A76  11                 	db	17
+    87  000A77  0E                 	db	14
+    88  000A78  04                 	db	4
+    89  000A79  1F                 	db	31
+    90  000A7A  04                 	db	4
+    91  000A7B  0A                 	db	10
+    92  000A7C  0A                 	db	10
+    93  000A7D  0E                 	db	14
+    94  000A7E  11                 	db	17
+    95  000A7F  0E                 	db	14
+    96  000A80  04                 	db	4
+    97  000A81  0E                 	db	14
+    98  000A82  15                 	db	21
+    99  000A83  04                 	db	4
+   100  000A84  0E                 	db	14
+   101                           
+   102                           	psect	smallconst
+   103  000800                     __psmallconst:
+   104                           	opt stack 0
+   105  000800  00                 	db	0
+   106  000801                     _INIT_STRING:
+   107                           	opt stack 0
+   108  000801  0028               	dw	40
+   109  000803  000C               	dw	12
+   110  000805  0001               	dw	1
+   111  000807  0006               	dw	6
+   112  000809                     __end_of_INIT_STRING:
+   113                           	opt stack 0
+   114  0000                     _LATC	set	3979
+   115  0000                     _TRISC	set	3988
+   116  0000                     _TRISA	set	3986
+   117  0000                     _TRISD	set	3989
+   118  0000                     _CMCON	set	4020
+   119  0000                     _ADCON1	set	4033
+   120  0000                     _LATCbits	set	3979
+   121  0000                     _LATA	set	3977
+   122  0000                     _LATD	set	3980
+   123                           
+   124                           ; #config settings
+   125  000809  00                 	db	0	; dummy byte at the end
+   126  0000                     
+   127                           	psect	cinit
+   128  000A04                     __pcinit:
+   129                           	opt stack 0
+   130  000A04                     start_initialization:
+   131                           	opt stack 0
+   132  000A04                     __initialization:
+   133                           	opt stack 0
+   134                           
+   135                           ; Initialize objects allocated to COMRAM (37 bytes)
+   136                           ; load TBLPTR registers with __pidataCOMRAM
+   137  000A04  0E60               	movlw	low __pidataCOMRAM
+   138  000A06  6EF6               	movwf	tblptrl,c
+   139  000A08  0E0A               	movlw	high __pidataCOMRAM
+   140  000A0A  6EF7               	movwf	tblptrh,c
+   141  000A0C  0E00               	movlw	low (__pidataCOMRAM shr (0+16))
+   142  000A0E  6EF8               	movwf	tblptru,c
+   143  000A10  EE00  F001         	lfsr	0,__pdataCOMRAM
+   144  000A14  EE10 F025          	lfsr	1,37
+   145  000A18                     copy_data0:
+   146  000A18  0009               	tblrd		*+
+   147  000A1A  CFF5 FFEE          	movff	tablat,postinc0
+   148  000A1E  50E5               	movf	postdec1,w,c
+   149  000A20  50E1               	movf	fsr1l,w,c
+   150  000A22  E1FA               	bnz	copy_data0
+   151  000A24                     end_of_initialization:
+   152                           	opt stack 0
+   153  000A24                     __end_of__initialization:
+   154                           	opt stack 0
+   155  000A24  0E00               	movlw	low (__Lsmallconst shr (0+16))
+   156  000A26  6EF8               	movwf	tblptru,c
+   157  000A28  0E08               	movlw	high __Lsmallconst
+   158  000A2A  6EF7               	movwf	tblptrh,c
+   159  000A2C  0100               	movlb	0
+   160  000A2E  EF05  F004         	goto	_main	;jump to C main() function
+   161                           tblptru	equ	0xFF8
+   162                           tblptrh	equ	0xFF7
+   163                           tblptrl	equ	0xFF6
+   164                           tablat	equ	0xFF5
+   165                           postinc0	equ	0xFEE
+   166                           postdec1	equ	0xFE5
+   167                           fsr1l	equ	0xFE1
+   168                           
+   169                           	psect	dataCOMRAM
+   170  000001                     __pdataCOMRAM:
+   171                           	opt stack 0
+   172  000001                     main@F3814:
+   173                           	opt stack 0
+   174  000001                     	ds	13
+   175  00000E                     _anima:
+   176                           	opt stack 0
+   177  00000E                     	ds	24
+   178                           tblptru	equ	0xFF8
+   179                           tblptrh	equ	0xFF7
+   180                           tblptrl	equ	0xFF6
+   181                           tablat	equ	0xFF5
+   182                           postinc0	equ	0xFEE
+   183                           postdec1	equ	0xFE5
+   184                           fsr1l	equ	0xFE1
+   185                           
+   186                           	psect	cstackCOMRAM
+   187  000026                     __pcstackCOMRAM:
+   188                           	opt stack 0
+   189  000026                     output_data@data:
+   190                           	opt stack 0
+   191  000026                     dic@t:
+   192                           	opt stack 0
+   193                           
+   194                           ; 2 bytes @ 0x0
+   195  000026                     	ds	2
+   196  000028                     send_nibble@data:
+   197                           	opt stack 0
+   198                           
+   199                           ; 1 bytes @ 0x2
+   200  000028                     	ds	1
+   201  000029                     ??_send_nibble:
+   202                           
+   203                           ; 1 bytes @ 0x3
+   204  000029                     	ds	1
+   205  00002A                     send_nibble@comand:
+   206                           	opt stack 0
+   207                           
+   208                           ; 1 bytes @ 0x4
+   209  00002A                     	ds	1
+   210  00002B                     send_byte@data:
+   211                           	opt stack 0
+   212                           
+   213                           ; 1 bytes @ 0x5
+   214  00002B                     	ds	1
+   215  00002C                     send_byte@comand:
+   216                           	opt stack 0
+   217                           
+   218                           ; 1 bytes @ 0x6
+   219  00002C                     	ds	1
+   220  00002D                     ??_lcd_init:
+   221  00002D                     lcd_gotoxy@y:
+   222                           	opt stack 0
+   223  00002D                     set_sgram_char@ptr:
+   224                           	opt stack 0
+   225                           
+   226                           ; 2 bytes @ 0x7
+   227  00002D                     	ds	1
+   228  00002E                     lcd_init@i:
+   229                           	opt stack 0
+   230  00002E                     lcd_gotoxy@x:
+   231                           	opt stack 0
+   232                           
+   233                           ; 1 bytes @ 0x8
+   234  00002E                     	ds	1
+   235  00002F                     set_sgram_char@dir:
+   236                           	opt stack 0
+   237  00002F                     _lcd_gotoxy$152:
+   238                           	opt stack 0
+   239                           
+   240                           ; 2 bytes @ 0x9
+   241  00002F                     	ds	1
+   242  000030                     set_sgram_char@i:
+   243                           	opt stack 0
+   244                           
+   245                           ; 1 bytes @ 0xA
+   246  000030                     	ds	1
+   247  000031                     lcd_gotoxy@address:
+   248                           	opt stack 0
+   249                           
+   250                           ; 1 bytes @ 0xB
+   251  000031                     	ds	1
+   252  000032                     ??_main:
+   253                           
+   254                           ; 1 bytes @ 0xC
+   255  000032                     	ds	1
+   256  000033                     main@my_name:
+   257                           	opt stack 0
+   258                           
+   259                           ; 13 bytes @ 0xD
+   260  000033                     	ds	13
+   261  000040                     main@j:
+   262                           	opt stack 0
+   263                           
+   264                           ; 2 bytes @ 0x1A
+   265  000040                     	ds	2
+   266  000042                     main@i:
+   267                           	opt stack 0
+   268                           
+   269                           ; 1 bytes @ 0x1C
+   270  000042                     	ds	1
+   271                           tblptru	equ	0xFF8
+   272                           tblptrh	equ	0xFF7
+   273                           tblptrl	equ	0xFF6
+   274                           tablat	equ	0xFF5
+   275                           postinc0	equ	0xFEE
+   276                           postdec1	equ	0xFE5
+   277                           fsr1l	equ	0xFE1
+   278                           
+   279 ;;
+   280 ;;Main: autosize = 0, tempsize = 1, incstack = 0, save=0
+   281 ;;
+   282 ;; *************** function _main *****************
+   283 ;; Defined at:
+   284 ;;		line 38 in file "main.c"
+   285 ;; Parameters:    Size  Location     Type
+   286 ;;		None
+   287 ;; Auto vars:     Size  Location     Type
+   288 ;;  j               2   26[COMRAM] int 
+   289 ;;  my_name        13   13[COMRAM] unsigned char [13]
+   290 ;;  i               1   28[COMRAM] unsigned char 
+   291 ;; Return value:  Size  Location     Type
+   292 ;;                  1    wreg      void 
+   293 ;; Registers used:
+   294 ;;		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+   295 ;; Tracked objects:
+   296 ;;		On entry : 0/0
+   297 ;;		On exit  : 0/0
+   298 ;;		Unchanged: 0/0
+   299 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   300 ;;      Params:         0       0       0       0       0       0       0       0       0
+   301 ;;      Locals:        16       0       0       0       0       0       0       0       0
+   302 ;;      Temps:          1       0       0       0       0       0       0       0       0
+   303 ;;      Totals:        17       0       0       0       0       0       0       0       0
+   304 ;;Total ram usage:       17 bytes
+   305 ;; Hardware stack levels required when called:    4
+   306 ;; This function calls:
+   307 ;;		_lcd_gotoxy
+   308 ;;		_lcd_init
+   309 ;;		_send_byte
+   310 ;;		_set_sgram_char
+   311 ;;		_setup
+   312 ;; This function is called by:
+   313 ;;		Startup code after reset
+   314 ;; This function uses a non-reentrant model
+   315 ;;
+   316                           
+   317                           	psect	text0
+   318  00080A                     __ptext0:
+   319                           	opt stack 0
+   320  00080A                     _main:
+   321                           	opt stack 27
+   322                           
+   323                           ;main.c: 39: setup();
+   324                           
+   325                           ;incstack = 0
+   326  00080A  EC43  F005         	call	_setup	;wreg free
+   327                           
+   328                           ;main.c: 40: unsigned char my_name[] = "Ivan  Moreno";
+   329  00080E  EE20  F001         	lfsr	2,main@F3814
+   330  000812  EE10  F033         	lfsr	1,main@my_name
+   331  000816  0E0C               	movlw	12
+   332  000818                     u301:
+   333  000818  CFDB FFE3          	movff	plusw2,plusw1
+   334  00081C  06E8               	decf	wreg,f,c
+   335  00081E  E2FC               	bc	u301
+   336                           
+   337                           ;main.c: 41: unsigned char i;
+   338                           ;main.c: 43: lcd_init();
+   339  000820  EC6F  F004         	call	_lcd_init	;wreg free
+   340                           
+   341                           ;main.c: 45: lcd_gotoxy(3,1);
+   342  000824  0E01               	movlw	1
+   343  000826  6E2D               	movwf	lcd_gotoxy@y,c
+   344  000828  0E03               	movlw	3
+   345  00082A  EC19  F005         	call	_lcd_gotoxy
+   346                           
+   347                           ;main.c: 46: for(i=0;i<12;i++)
+   348  00082E  0E00               	movlw	0
+   349  000830  6E42               	movwf	main@i,c
+   350  000832                     l974:
+   351  000832  0E0B               	movlw	11
+   352  000834  6442               	cpfsgt	main@i,c
+   353  000836  D001               	goto	l49
+   354  000838  D00F               	goto	u320
+   355  00083A                     l49:
+   356                           
+   357                           ;main.c: 47: send_byte(1,my_name[i]);
+   358  00083A  5042               	movf	main@i,w,c
+   359  00083C  0D01               	mullw	1
+   360  00083E  0E33               	movlw	low main@my_name
+   361  000840  24F3               	addwf	prodl,w,c
+   362  000842  6ED9               	movwf	fsr2l,c
+   363  000844  0E00               	movlw	high main@my_name
+   364  000846  20F4               	addwfc	prodh,w,c
+   365  000848  6EDA               	movwf	fsr2h,c
+   366  00084A  50DF               	movf	indf2,w,c
+   367  00084C  6E2B               	movwf	send_byte@data,c
+   368  00084E  0E01               	movlw	1
+   369  000850  EC54  F005         	call	_send_byte
+   370  000854  2A42               	incf	main@i,f,c
+   371  000856  D7ED               	goto	l974
+   372  000858                     u320:
+   373                           
+   374                           ;main.c: 49: set_sgram_char(0,anima[1]);
+   375  000858  0E16               	movlw	low (_anima+8)
+   376  00085A  6E2D               	movwf	set_sgram_char@ptr,c
+   377  00085C  0E00               	movlw	high (_anima+8)
+   378  00085E  6E2E               	movwf	set_sgram_char@ptr+1,c
+   379  000860  0E00               	movlw	0
+   380  000862  ECC2  F004         	call	_set_sgram_char
+   381                           
+   382                           ;main.c: 51: lcd_gotoxy(0,2);
+   383  000866  0E02               	movlw	2
+   384  000868  6E2D               	movwf	lcd_gotoxy@y,c
+   385  00086A  0E00               	movlw	0
+   386  00086C  EC19  F005         	call	_lcd_gotoxy
+   387                           
+   388                           ;main.c: 53: for (i = 0; i < 0x10; i++)
+   389  000870  0E00               	movlw	0
+   390  000872  6E42               	movwf	main@i,c
+   391  000874                     l990:
+   392  000874  0E0F               	movlw	15
+   393  000876  6442               	cpfsgt	main@i,c
+   394  000878  D001               	goto	l51
+   395  00087A  D007               	goto	u340
+   396  00087C                     l51:
+   397                           
+   398                           ;main.c: 54: send_byte(1,0);
+   399  00087C  0E00               	movlw	0
+   400  00087E  6E2B               	movwf	send_byte@data,c
+   401  000880  0E01               	movlw	1
+   402  000882  EC54  F005         	call	_send_byte
+   403  000886  2A42               	incf	main@i,f,c
+   404  000888  D7F5               	goto	l990
+   405  00088A                     u340:
+   406                           
+   407                           ;main.c: 59: for (i = 0; i < 3; i++){
+   408                           
+   409                           ;main.c: 58: for(;;){
+   410  00088A  0E00               	movlw	0
+   411  00088C  6E42               	movwf	main@i,c
+   412  00088E                     l1002:
+   413  00088E  0E02               	movlw	2
+   414  000890  6442               	cpfsgt	main@i,c
+   415  000892  D001               	goto	l54
+   416  000894  D7FA               	goto	u340
+   417  000896                     l54:
+   418                           
+   419                           ;main.c: 60: for(int j=0;j<500;_delay((unsigned long)((1)*(20000000/4000.0))),++j);
+   420  000896  0E00               	movlw	0
+   421  000898  6E41               	movwf	main@j+1,c
+   422  00089A  0E00               	movlw	0
+   423  00089C  6E40               	movwf	main@j,c
+   424  00089E                     l1008:
+   425  00089E  BE41               	btfsc	main@j+1,7,c
+   426  0008A0  D006               	goto	l56
+   427  0008A2  0EF4               	movlw	244
+   428  0008A4  5C40               	subwf	main@j,w,c
+   429  0008A6  0E01               	movlw	1
+   430  0008A8  5841               	subwfb	main@j+1,w,c
+   431  0008AA  B0D8               	btfsc	status,0,c
+   432  0008AC  D00B               	goto	u370
+   433  0008AE                     l56:
+   434  0008AE  0E07               	movlw	7
+   435  0008B0  6E32               	movwf	??_main& (0+255),c
+   436  0008B2  0E7D               	movlw	125
+   437  0008B4                     u397:
+   438  0008B4  2EE8               	decfsz	wreg,f,c
+   439  0008B6  D7FE               	bra	u397
+   440  0008B8  2E32               	decfsz	??_main& (0+255),f,c
+   441  0008BA  D7FC               	bra	u397
+   442  0008BC  F000               	nop	
+   443  0008BE  4A40               	infsnz	main@j,f,c
+   444  0008C0  2A41               	incf	main@j+1,f,c
+   445  0008C2  D7ED               	goto	l1008
+   446  0008C4                     u370:
+   447                           
+   448                           ;main.c: 61: set_sgram_char(0,anima[i]);
+   449  0008C4  5042               	movf	main@i,w,c
+   450  0008C6  0D08               	mullw	8
+   451  0008C8  0E0E               	movlw	low _anima
+   452  0008CA  24F3               	addwf	prodl,w,c
+   453  0008CC  6E2D               	movwf	set_sgram_char@ptr,c
+   454  0008CE  0E00               	movlw	high _anima
+   455  0008D0  20F4               	addwfc	prodh,w,c
+   456  0008D2  6E2E               	movwf	set_sgram_char@ptr+1,c
+   457  0008D4  0E00               	movlw	0
+   458  0008D6  ECC2  F004         	call	_set_sgram_char
+   459  0008DA  2A42               	incf	main@i,f,c
+   460  0008DC  D7D8               	goto	l1002
+   461  0008DE                     __end_of_main:
+   462                           	opt stack 0
+   463                           tblptru	equ	0xFF8
+   464                           tblptrh	equ	0xFF7
+   465                           tblptrl	equ	0xFF6
+   466                           tablat	equ	0xFF5
+   467                           prodh	equ	0xFF4
+   468                           prodl	equ	0xFF3
+   469                           postinc0	equ	0xFEE
+   470                           wreg	equ	0xFE8
+   471                           postdec1	equ	0xFE5
+   472                           plusw1	equ	0xFE3
+   473                           fsr1l	equ	0xFE1
+   474                           indf2	equ	0xFDF
+   475                           plusw2	equ	0xFDB
+   476                           fsr2h	equ	0xFDA
+   477                           fsr2l	equ	0xFD9
+   478                           status	equ	0xFD8
+   479                           
+   480 ;; *************** function _setup *****************
+   481 ;; Defined at:
+   482 ;;		line 115 in file "main.c"
+   483 ;; Parameters:    Size  Location     Type
+   484 ;;		None
+   485 ;; Auto vars:     Size  Location     Type
+   486 ;;		None
+   487 ;; Return value:  Size  Location     Type
+   488 ;;                  1    wreg      void 
+   489 ;; Registers used:
+   490 ;;		wreg, status,2
+   491 ;; Tracked objects:
+   492 ;;		On entry : 0/0
+   493 ;;		On exit  : 0/0
+   494 ;;		Unchanged: 0/0
+   495 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   496 ;;      Params:         0       0       0       0       0       0       0       0       0
+   497 ;;      Locals:         0       0       0       0       0       0       0       0       0
+   498 ;;      Temps:          0       0       0       0       0       0       0       0       0
+   499 ;;      Totals:         0       0       0       0       0       0       0       0       0
+   500 ;;Total ram usage:        0 bytes
+   501 ;; Hardware stack levels used:    1
+   502 ;; This function calls:
+   503 ;;		Nothing
+   504 ;; This function is called by:
+   505 ;;		_main
+   506 ;; This function uses a non-reentrant model
+   507 ;;
+   508                           
+   509                           	psect	text1
+   510  000A86                     __ptext1:
+   511                           	opt stack 0
+   512  000A86                     _setup:
+   513                           	opt stack 30
+   514                           
+   515                           ;main.c: 116: ADCON1 = CMCON = 0x0F;
+   516                           
+   517                           ;incstack = 0
+   518  000A86  0E0F               	movlw	15
+   519  000A88  6EB4               	movwf	4020,c	;volatile
+   520  000A8A  CFB4 FFC1          	movff	4020,4033	;volatile
+   521                           
+   522                           ;main.c: 117: TRISD = TRISA = 0xF0;
+   523  000A8E  0EF0               	movlw	240
+   524  000A90  6E92               	movwf	3986,c	;volatile
+   525  000A92  CF92 FF95          	movff	3986,3989	;volatile
+   526                           
+   527                           ;main.c: 118: TRISC = 0xFC;
+   528  000A96  0EFC               	movlw	252
+   529  000A98  6E94               	movwf	3988,c	;volatile
+   530                           
+   531                           ;main.c: 119: LATC = LATD = LATA = 0x00;
+   532  000A9A  0E00               	movlw	0
+   533  000A9C  6E89               	movwf	3977,c	;volatile
+   534  000A9E  CF89 FF8C          	movff	3977,3980	;volatile
+   535  000AA2  CF8C FF8B          	movff	3980,3979	;volatile
+   536  000AA6  0012               	return		;funcret
+   537  000AA8                     __end_of_setup:
+   538                           	opt stack 0
+   539                           tblptru	equ	0xFF8
+   540                           tblptrh	equ	0xFF7
+   541                           tblptrl	equ	0xFF6
+   542                           tablat	equ	0xFF5
+   543                           prodh	equ	0xFF4
+   544                           prodl	equ	0xFF3
+   545                           postinc0	equ	0xFEE
+   546                           wreg	equ	0xFE8
+   547                           postdec1	equ	0xFE5
+   548                           plusw1	equ	0xFE3
+   549                           fsr1l	equ	0xFE1
+   550                           indf2	equ	0xFDF
+   551                           plusw2	equ	0xFDB
+   552                           fsr2h	equ	0xFDA
+   553                           fsr2l	equ	0xFD9
+   554                           status	equ	0xFD8
+   555                           
+   556 ;; *************** function _set_sgram_char *****************
+   557 ;; Defined at:
+   558 ;;		line 104 in file "main.c"
+   559 ;; Parameters:    Size  Location     Type
+   560 ;;  dir             1    wreg     unsigned char 
+   561 ;;  ptr             2    7[COMRAM] PTR unsigned char 
+   562 ;;		 -> anima(24), 
+   563 ;; Auto vars:     Size  Location     Type
+   564 ;;  dir             1    9[COMRAM] unsigned char 
+   565 ;;  i               1   10[COMRAM] unsigned char 
+   566 ;; Return value:  Size  Location     Type
+   567 ;;                  1    wreg      void 
+   568 ;; Registers used:
+   569 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+   570 ;; Tracked objects:
+   571 ;;		On entry : 0/0
+   572 ;;		On exit  : 0/0
+   573 ;;		Unchanged: 0/0
+   574 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   575 ;;      Params:         2       0       0       0       0       0       0       0       0
+   576 ;;      Locals:         2       0       0       0       0       0       0       0       0
+   577 ;;      Temps:          0       0       0       0       0       0       0       0       0
+   578 ;;      Totals:         4       0       0       0       0       0       0       0       0
+   579 ;;Total ram usage:        4 bytes
+   580 ;; Hardware stack levels used:    1
+   581 ;; Hardware stack levels required when called:    3
+   582 ;; This function calls:
+   583 ;;		_send_byte
+   584 ;; This function is called by:
+   585 ;;		_main
+   586 ;; This function uses a non-reentrant model
+   587 ;;
+   588                           
+   589                           	psect	text2
+   590  000984                     __ptext2:
+   591                           	opt stack 0
+   592  000984                     _set_sgram_char:
+   593                           	opt stack 27
+   594                           
+   595                           ;incstack = 0
+   596                           ;set_sgram_char@dir stored from wreg
+   597  000984  6E2F               	movwf	set_sgram_char@dir,c
+   598                           
+   599                           ;main.c: 105: unsigned char i;
+   600                           ;main.c: 107: dir <<= 3;
+   601  000986  90D8               	bcf	status,0,c
+   602  000988  362F               	rlcf	set_sgram_char@dir,f,c
+   603  00098A  90D8               	bcf	status,0,c
+   604  00098C  362F               	rlcf	set_sgram_char@dir,f,c
+   605  00098E  90D8               	bcf	status,0,c
+   606  000990  362F               	rlcf	set_sgram_char@dir,f,c
+   607                           
+   608                           ;main.c: 108: dir &= 0x38;
+   609  000992  0E38               	movlw	56
+   610  000994  162F               	andwf	set_sgram_char@dir,f,c
+   611                           
+   612                           ;main.c: 110: send_byte(0, 0x40 | dir);
+   613  000996  502F               	movf	set_sgram_char@dir,w,c
+   614  000998  0940               	iorlw	64
+   615  00099A  6E2B               	movwf	send_byte@data,c
+   616  00099C  0E00               	movlw	0
+   617  00099E  EC54  F005         	call	_send_byte
+   618                           
+   619                           ;main.c: 111: for(i=0; i<8; i++)
+   620  0009A2  0E00               	movlw	0
+   621  0009A4  6E30               	movwf	set_sgram_char@i,c
+   622  0009A6                     l952:
+   623  0009A6  0E07               	movlw	7
+   624  0009A8  6430               	cpfsgt	set_sgram_char@i,c
+   625  0009AA  D001               	goto	l78
+   626  0009AC  0012               	return	
+   627  0009AE                     l78:
+   628                           
+   629                           ;main.c: 112: send_byte(1, *ptr++);
+   630  0009AE  C02D  FFD9         	movff	set_sgram_char@ptr,fsr2l
+   631  0009B2  C02E  FFDA         	movff	set_sgram_char@ptr+1,fsr2h
+   632  0009B6  50DF               	movf	indf2,w,c
+   633  0009B8  6E2B               	movwf	send_byte@data,c
+   634  0009BA  0E01               	movlw	1
+   635  0009BC  EC54  F005         	call	_send_byte
+   636  0009C0  4A2D               	infsnz	set_sgram_char@ptr,f,c
+   637  0009C2  2A2E               	incf	set_sgram_char@ptr+1,f,c
+   638  0009C4  2A30               	incf	set_sgram_char@i,f,c
+   639  0009C6  D7EF               	goto	l952
+   640  0009C8                     __end_of_set_sgram_char:
+   641                           	opt stack 0
+   642                           tblptru	equ	0xFF8
+   643                           tblptrh	equ	0xFF7
+   644                           tblptrl	equ	0xFF6
+   645                           tablat	equ	0xFF5
+   646                           prodh	equ	0xFF4
+   647                           prodl	equ	0xFF3
+   648                           postinc0	equ	0xFEE
+   649                           wreg	equ	0xFE8
+   650                           postdec1	equ	0xFE5
+   651                           plusw1	equ	0xFE3
+   652                           fsr1l	equ	0xFE1
+   653                           indf2	equ	0xFDF
+   654                           plusw2	equ	0xFDB
+   655                           fsr2h	equ	0xFDA
+   656                           fsr2l	equ	0xFD9
+   657                           status	equ	0xFD8
+   658                           
+   659 ;; *************** function _lcd_init *****************
+   660 ;; Defined at:
+   661 ;;		line 69 in file "main.c"
+   662 ;; Parameters:    Size  Location     Type
+   663 ;;		None
+   664 ;; Auto vars:     Size  Location     Type
+   665 ;;  i               1    8[COMRAM] unsigned char 
+   666 ;; Return value:  Size  Location     Type
+   667 ;;                  1    wreg      void 
+   668 ;; Registers used:
+   669 ;;		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+   670 ;; Tracked objects:
+   671 ;;		On entry : 0/0
+   672 ;;		On exit  : 0/0
+   673 ;;		Unchanged: 0/0
+   674 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   675 ;;      Params:         0       0       0       0       0       0       0       0       0
+   676 ;;      Locals:         1       0       0       0       0       0       0       0       0
+   677 ;;      Temps:          1       0       0       0       0       0       0       0       0
+   678 ;;      Totals:         2       0       0       0       0       0       0       0       0
+   679 ;;Total ram usage:        2 bytes
+   680 ;; Hardware stack levels used:    1
+   681 ;; Hardware stack levels required when called:    3
+   682 ;; This function calls:
+   683 ;;		_output_data
+   684 ;;		_send_byte
+   685 ;;		_send_nibble
+   686 ;; This function is called by:
+   687 ;;		_main
+   688 ;; This function uses a non-reentrant model
+   689 ;;
+   690                           
+   691                           	psect	text3
+   692  0008DE                     __ptext3:
+   693                           	opt stack 0
+   694  0008DE                     _lcd_init:
+   695                           	opt stack 27
+   696                           
+   697                           ;main.c: 70: unsigned char i;
+   698                           ;main.c: 71: output_data(0x00);
+   699                           
+   700                           ;incstack = 0
+   701  0008DE  0E00               	movlw	0
+   702  0008E0  EC6C  F005         	call	_output_data
+   703                           
+   704                           ;main.c: 73: _delay((unsigned long)((15)*(20000000/4000.0)));
+   705  0008E4  0E62               	movlw	98
+   706  0008E6  6E2D               	movwf	??_lcd_init& (0+255),c
+   707  0008E8  0E66               	movlw	102
+   708  0008EA                     u407:
+   709  0008EA  2EE8               	decfsz	wreg,f,c
+   710  0008EC  D7FE               	bra	u407
+   711  0008EE  2E2D               	decfsz	??_lcd_init& (0+255),f,c
+   712  0008F0  D7FC               	bra	u407
+   713                           
+   714                           ;main.c: 75: for (i = 0; i < 3;_delay((unsigned long)((5)*(20000000/4000.0))), ++i)
+   715  0008F2  0E00               	movlw	0
+   716  0008F4  6E2E               	movwf	lcd_init@i,c
+   717  0008F6                     l902:
+   718  0008F6  0E02               	movlw	2
+   719  0008F8  642E               	cpfsgt	lcd_init@i,c
+   720  0008FA  D001               	goto	l62
+   721  0008FC  D00F               	goto	u240
+   722  0008FE                     l62:
+   723                           
+   724                           ;main.c: 76: send_nibble(0,3);
+   725  0008FE  0E03               	movlw	3
+   726  000900  6E28               	movwf	send_nibble@data,c
+   727  000902  0E00               	movlw	0
+   728  000904  ECE4  F004         	call	_send_nibble
+   729  000908  0E21               	movlw	33
+   730  00090A  6E2D               	movwf	??_lcd_init& (0+255),c
+   731  00090C  0E76               	movlw	118
+   732  00090E                     u417:
+   733  00090E  2EE8               	decfsz	wreg,f,c
+   734  000910  D7FE               	bra	u417
+   735  000912  2E2D               	decfsz	??_lcd_init& (0+255),f,c
+   736  000914  D7FC               	bra	u417
+   737  000916  D000               	nop2	
+   738  000918  2A2E               	incf	lcd_init@i,f,c
+   739  00091A  D7ED               	goto	l902
+   740  00091C                     u240:
+   741                           
+   742                           ;main.c: 77: send_nibble(0,2);
+   743  00091C  0E02               	movlw	2
+   744  00091E  6E28               	movwf	send_nibble@data,c
+   745  000920  0E00               	movlw	0
+   746  000922  ECE4  F004         	call	_send_nibble
+   747                           
+   748                           ;main.c: 79: _delay((unsigned long)((5)*(20000000/4000.0)));
+   749  000926  0E21               	movlw	33
+   750  000928  6E2D               	movwf	??_lcd_init& (0+255),c
+   751  00092A  0E76               	movlw	118
+   752  00092C                     u427:
+   753  00092C  2EE8               	decfsz	wreg,f,c
+   754  00092E  D7FE               	bra	u427
+   755  000930  2E2D               	decfsz	??_lcd_init& (0+255),f,c
+   756  000932  D7FC               	bra	u427
+   757  000934  D000               	nop2	
+   758                           
+   759                           ;main.c: 81: for (i = 0; i < 4; _delay((unsigned long)((5)*(20000000/4000.0))),++i)
+   760  000936  0E00               	movlw	0
+   761  000938  6E2E               	movwf	lcd_init@i,c
+   762  00093A                     l920:
+   763  00093A  0E03               	movlw	3
+   764  00093C  642E               	cpfsgt	lcd_init@i,c
+   765  00093E  D001               	goto	l64
+   766  000940  D018               	goto	u260
+   767  000942                     l64:
+   768                           
+   769                           ;main.c: 82: send_byte(0,INIT_STRING[i]);
+   770  000942  502E               	movf	lcd_init@i,w,c
+   771  000944  0D02               	mullw	2
+   772  000946  0E01               	movlw	low _INIT_STRING
+   773  000948  24F3               	addwf	prodl,w,c
+   774  00094A  6EF6               	movwf	tblptrl,c
+   775  00094C  0E08               	movlw	high _INIT_STRING
+   776  00094E  20F4               	addwfc	prodh,w,c
+   777  000950  6EF7               	movwf	tblptrh,c
+   778  000952                     	if	0	;There are less than 3 active tblptr bytes
+   779  000952                     	endif
+   780  000952  0008               	tblrd		*
+   781  000954  CFF5 F02B          	movff	tablat,send_byte@data
+   782  000958  0E00               	movlw	0
+   783  00095A  EC54  F005         	call	_send_byte
+   784  00095E  0E21               	movlw	33
+   785  000960  6E2D               	movwf	??_lcd_init& (0+255),c
+   786  000962  0E76               	movlw	118
+   787  000964                     u437:
+   788  000964  2EE8               	decfsz	wreg,f,c
+   789  000966  D7FE               	bra	u437
+   790  000968  2E2D               	decfsz	??_lcd_init& (0+255),f,c
+   791  00096A  D7FC               	bra	u437
+   792  00096C  D000               	nop2	
+   793  00096E  2A2E               	incf	lcd_init@i,f,c
+   794  000970  D7E4               	goto	l920
+   795  000972                     u260:
+   796                           
+   797                           ;main.c: 83: _delay((unsigned long)((1)*(20000000/4000.0)));
+   798  000972  0E07               	movlw	7
+   799  000974  6E2D               	movwf	??_lcd_init& (0+255),c
+   800  000976  0E7D               	movlw	125
+   801  000978                     u447:
+   802  000978  2EE8               	decfsz	wreg,f,c
+   803  00097A  D7FE               	bra	u447
+   804  00097C  2E2D               	decfsz	??_lcd_init& (0+255),f,c
+   805  00097E  D7FC               	bra	u447
+   806  000980  F000               	nop	
+   807  000982  0012               	return		;funcret
+   808  000984                     __end_of_lcd_init:
+   809                           	opt stack 0
+   810                           tblptru	equ	0xFF8
+   811                           tblptrh	equ	0xFF7
+   812                           tblptrl	equ	0xFF6
+   813                           tablat	equ	0xFF5
+   814                           prodh	equ	0xFF4
+   815                           prodl	equ	0xFF3
+   816                           postinc0	equ	0xFEE
+   817                           wreg	equ	0xFE8
+   818                           postdec1	equ	0xFE5
+   819                           plusw1	equ	0xFE3
+   820                           fsr1l	equ	0xFE1
+   821                           indf2	equ	0xFDF
+   822                           plusw2	equ	0xFDB
+   823                           fsr2h	equ	0xFDA
+   824                           fsr2l	equ	0xFD9
+   825                           status	equ	0xFD8
+   826                           
+   827 ;; *************** function _output_data *****************
+   828 ;; Defined at:
+   829 ;;		line 85 in file "main.c"
+   830 ;; Parameters:    Size  Location     Type
+   831 ;;  data            1    wreg     unsigned char 
+   832 ;; Auto vars:     Size  Location     Type
+   833 ;;  data            1    0[COMRAM] unsigned char 
+   834 ;; Return value:  Size  Location     Type
+   835 ;;                  1    wreg      void 
+   836 ;; Registers used:
+   837 ;;		wreg, status,2, status,0
+   838 ;; Tracked objects:
+   839 ;;		On entry : 0/0
+   840 ;;		On exit  : 0/0
+   841 ;;		Unchanged: 0/0
+   842 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   843 ;;      Params:         0       0       0       0       0       0       0       0       0
+   844 ;;      Locals:         1       0       0       0       0       0       0       0       0
+   845 ;;      Temps:          0       0       0       0       0       0       0       0       0
+   846 ;;      Totals:         1       0       0       0       0       0       0       0       0
+   847 ;;Total ram usage:        1 bytes
+   848 ;; Hardware stack levels used:    1
+   849 ;; This function calls:
+   850 ;;		Nothing
+   851 ;; This function is called by:
+   852 ;;		_lcd_init
+   853 ;; This function uses a non-reentrant model
+   854 ;;
+   855                           
+   856                           	psect	text4
+   857  000AD8                     __ptext4:
+   858                           	opt stack 0
+   859  000AD8                     _output_data:
+   860                           	opt stack 29
+   861                           
+   862                           ;incstack = 0
+   863                           ;output_data@data stored from wreg
+   864  000AD8  6E26               	movwf	output_data@data,c
+   865                           
+   866                           ;main.c: 86: LATD = 0x0F & data>>4;
+   867  000ADA  3826               	swapf	output_data@data,w,c
+   868  000ADC  0B0F               	andlw	15
+   869  000ADE  0B0F               	andlw	15
+   870  000AE0  6E8C               	movwf	3980,c	;volatile
+   871                           
+   872                           ;main.c: 87: LATA = 0x0F & data;
+   873  000AE2  5026               	movf	output_data@data,w,c
+   874  000AE4  0B0F               	andlw	15
+   875  000AE6  6E89               	movwf	3977,c	;volatile
+   876  000AE8  0012               	return		;funcret
+   877  000AEA                     __end_of_output_data:
+   878                           	opt stack 0
+   879                           tblptru	equ	0xFF8
+   880                           tblptrh	equ	0xFF7
+   881                           tblptrl	equ	0xFF6
+   882                           tablat	equ	0xFF5
+   883                           prodh	equ	0xFF4
+   884                           prodl	equ	0xFF3
+   885                           postinc0	equ	0xFEE
+   886                           wreg	equ	0xFE8
+   887                           postdec1	equ	0xFE5
+   888                           plusw1	equ	0xFE3
+   889                           fsr1l	equ	0xFE1
+   890                           indf2	equ	0xFDF
+   891                           plusw2	equ	0xFDB
+   892                           fsr2h	equ	0xFDA
+   893                           fsr2l	equ	0xFD9
+   894                           status	equ	0xFD8
+   895                           
+   896 ;; *************** function _lcd_gotoxy *****************
+   897 ;; Defined at:
+   898 ;;		line 125 in file "main.c"
+   899 ;; Parameters:    Size  Location     Type
+   900 ;;  x               1    wreg     unsigned char 
+   901 ;;  y               1    7[COMRAM] unsigned char 
+   902 ;; Auto vars:     Size  Location     Type
+   903 ;;  x               1    8[COMRAM] unsigned char 
+   904 ;;  address         1   11[COMRAM] unsigned char 
+   905 ;; Return value:  Size  Location     Type
+   906 ;;                  1    wreg      void 
+   907 ;; Registers used:
+   908 ;;		wreg, status,2, status,0, cstack
+   909 ;; Tracked objects:
+   910 ;;		On entry : 0/0
+   911 ;;		On exit  : 0/0
+   912 ;;		Unchanged: 0/0
+   913 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   914 ;;      Params:         1       0       0       0       0       0       0       0       0
+   915 ;;      Locals:         4       0       0       0       0       0       0       0       0
+   916 ;;      Temps:          0       0       0       0       0       0       0       0       0
+   917 ;;      Totals:         5       0       0       0       0       0       0       0       0
+   918 ;;Total ram usage:        5 bytes
+   919 ;; Hardware stack levels used:    1
+   920 ;; Hardware stack levels required when called:    3
+   921 ;; This function calls:
+   922 ;;		_send_byte
+   923 ;; This function is called by:
+   924 ;;		_main
+   925 ;; This function uses a non-reentrant model
+   926 ;;
+   927                           
+   928                           	psect	text5
+   929  000A32                     __ptext5:
+   930                           	opt stack 0
+   931  000A32                     _lcd_gotoxy:
+   932                           	opt stack 27
+   933                           
+   934                           ;incstack = 0
+   935                           ;lcd_gotoxy@x stored from wreg
+   936  000A32  6E2E               	movwf	lcd_gotoxy@x,c
+   937                           
+   938                           ;main.c: 127: unsigned char address;
+   939                           ;main.c: 129: address = y!=1? 0x40:0;
+   940  000A34  042D               	decf	lcd_gotoxy@y,w,c
+   941  000A36  A4D8               	btfss	status,2,c
+   942  000A38  D004               	goto	l93
+   943  000A3A  0E00               	movlw	0
+   944  000A3C  6E30               	movwf	_lcd_gotoxy$152+1,c
+   945  000A3E  0E00               	movlw	0
+   946  000A40  D003               	goto	L1
+   947  000A42                     l93:
+   948  000A42  0E00               	movlw	0
+   949  000A44  6E30               	movwf	_lcd_gotoxy$152+1,c
+   950  000A46  0E40               	movlw	64
+   951  000A48                     L1:
+   952  000A48  6E2F               	movwf	_lcd_gotoxy$152,c
+   953  000A4A  C02F  F031         	movff	_lcd_gotoxy$152,lcd_gotoxy@address
+   954                           
+   955                           ;main.c: 131: address += x-1;
+   956  000A4E  042E               	decf	lcd_gotoxy@x,w,c
+   957  000A50  2631               	addwf	lcd_gotoxy@address,f,c
+   958                           
+   959                           ;main.c: 132: send_byte(0,0x80|address);
+   960  000A52  5031               	movf	lcd_gotoxy@address,w,c
+   961  000A54  0980               	iorlw	128
+   962  000A56  6E2B               	movwf	send_byte@data,c
+   963  000A58  0E00               	movlw	0
+   964  000A5A  EC54  F005         	call	_send_byte
+   965  000A5E  0012               	return		;funcret
+   966  000A60                     __end_of_lcd_gotoxy:
+   967                           	opt stack 0
+   968                           tblptru	equ	0xFF8
+   969                           tblptrh	equ	0xFF7
+   970                           tblptrl	equ	0xFF6
+   971                           tablat	equ	0xFF5
+   972                           prodh	equ	0xFF4
+   973                           prodl	equ	0xFF3
+   974                           postinc0	equ	0xFEE
+   975                           wreg	equ	0xFE8
+   976                           postdec1	equ	0xFE5
+   977                           plusw1	equ	0xFE3
+   978                           fsr1l	equ	0xFE1
+   979                           indf2	equ	0xFDF
+   980                           plusw2	equ	0xFDB
+   981                           fsr2h	equ	0xFDA
+   982                           fsr2l	equ	0xFD9
+   983                           status	equ	0xFD8
+   984                           
+   985 ;; *************** function _send_byte *****************
+   986 ;; Defined at:
+   987 ;;		line 100 in file "main.c"
+   988 ;; Parameters:    Size  Location     Type
+   989 ;;  comand          1    wreg     unsigned char 
+   990 ;;  data            1    5[COMRAM] unsigned char 
+   991 ;; Auto vars:     Size  Location     Type
+   992 ;;  comand          1    6[COMRAM] unsigned char 
+   993 ;; Return value:  Size  Location     Type
+   994 ;;                  1    wreg      void 
+   995 ;; Registers used:
+   996 ;;		wreg, status,2, status,0, cstack
+   997 ;; Tracked objects:
+   998 ;;		On entry : 0/0
+   999 ;;		On exit  : 0/0
+  1000 ;;		Unchanged: 0/0
+  1001 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+  1002 ;;      Params:         1       0       0       0       0       0       0       0       0
+  1003 ;;      Locals:         1       0       0       0       0       0       0       0       0
+  1004 ;;      Temps:          0       0       0       0       0       0       0       0       0
+  1005 ;;      Totals:         2       0       0       0       0       0       0       0       0
+  1006 ;;Total ram usage:        2 bytes
+  1007 ;; Hardware stack levels used:    1
+  1008 ;; Hardware stack levels required when called:    2
+  1009 ;; This function calls:
+  1010 ;;		_send_nibble
+  1011 ;; This function is called by:
+  1012 ;;		_main
+  1013 ;;		_lcd_init
+  1014 ;;		_set_sgram_char
+  1015 ;;		_lcd_gotoxy
+  1016 ;; This function uses a non-reentrant model
+  1017 ;;
+  1018                           
+  1019                           	psect	text6
+  1020  000AA8                     __ptext6:
+  1021                           	opt stack 0
+  1022  000AA8                     _send_byte:
+  1023                           	opt stack 27
+  1024                           
+  1025                           ;incstack = 0
+  1026                           ;send_byte@comand stored from wreg
+  1027  000AA8  6E2C               	movwf	send_byte@comand,c
+  1028                           
+  1029                           ;main.c: 101: send_nibble(comand,data>>4);
+  1030  000AAA  382B               	swapf	send_byte@data,w,c
+  1031  000AAC  0B0F               	andlw	15
+  1032  000AAE  6E28               	movwf	send_nibble@data,c
+  1033  000AB0  502C               	movf	send_byte@comand,w,c
+  1034  000AB2  ECE4  F004         	call	_send_nibble
+  1035                           
+  1036                           ;main.c: 102: send_nibble(comand,data);
+  1037  000AB6  C02B  F028         	movff	send_byte@data,send_nibble@data
+  1038  000ABA  502C               	movf	send_byte@comand,w,c
+  1039  000ABC  ECE4  F004         	call	_send_nibble
+  1040  000AC0  0012               	return		;funcret
+  1041  000AC2                     __end_of_send_byte:
+  1042                           	opt stack 0
+  1043                           tblptru	equ	0xFF8
+  1044                           tblptrh	equ	0xFF7
+  1045                           tblptrl	equ	0xFF6
+  1046                           tablat	equ	0xFF5
+  1047                           prodh	equ	0xFF4
+  1048                           prodl	equ	0xFF3
+  1049                           postinc0	equ	0xFEE
+  1050                           wreg	equ	0xFE8
+  1051                           postdec1	equ	0xFE5
+  1052                           plusw1	equ	0xFE3
+  1053                           fsr1l	equ	0xFE1
+  1054                           indf2	equ	0xFDF
+  1055                           plusw2	equ	0xFDB
+  1056                           fsr2h	equ	0xFDA
+  1057                           fsr2l	equ	0xFD9
+  1058                           status	equ	0xFD8
+  1059                           
+  1060 ;; *************** function _send_nibble *****************
+  1061 ;; Defined at:
+  1062 ;;		line 89 in file "main.c"
+  1063 ;; Parameters:    Size  Location     Type
+  1064 ;;  comand          1    wreg     unsigned char 
+  1065 ;;  data            1    2[COMRAM] unsigned char 
+  1066 ;; Auto vars:     Size  Location     Type
+  1067 ;;  comand          1    4[COMRAM] unsigned char 
+  1068 ;; Return value:  Size  Location     Type
+  1069 ;;                  1    wreg      void 
+  1070 ;; Registers used:
+  1071 ;;		wreg, status,2, status,0, cstack
+  1072 ;; Tracked objects:
+  1073 ;;		On entry : 0/0
+  1074 ;;		On exit  : 0/0
+  1075 ;;		Unchanged: 0/0
+  1076 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+  1077 ;;      Params:         1       0       0       0       0       0       0       0       0
+  1078 ;;      Locals:         1       0       0       0       0       0       0       0       0
+  1079 ;;      Temps:          1       0       0       0       0       0       0       0       0
+  1080 ;;      Totals:         3       0       0       0       0       0       0       0       0
+  1081 ;;Total ram usage:        3 bytes
+  1082 ;; Hardware stack levels used:    1
+  1083 ;; Hardware stack levels required when called:    1
+  1084 ;; This function calls:
+  1085 ;;		_dic
+  1086 ;; This function is called by:
+  1087 ;;		_lcd_init
+  1088 ;;		_send_byte
+  1089 ;; This function uses a non-reentrant model
+  1090 ;;
+  1091                           
+  1092                           	psect	text7
+  1093  0009C8                     __ptext7:
+  1094                           	opt stack 0
+  1095  0009C8                     _send_nibble:
+  1096                           	opt stack 27
+  1097                           
+  1098                           ;incstack = 0
+  1099                           ;send_nibble@comand stored from wreg
+  1100  0009C8  6E2A               	movwf	send_nibble@comand,c
+  1101                           
+  1102                           ;main.c: 90: LATCbits.LC0 = 0;
+  1103  0009CA  908B               	bcf	3979,0,c	;volatile
+  1104                           
+  1105                           ;main.c: 91: LATCbits.LC1 = (comand != 0);
+  1106  0009CC  502A               	movf	send_nibble@comand,w,c
+  1107  0009CE  B4D8               	btfsc	status,2,c
+  1108  0009D0  D003               	goto	u210
+  1109  0009D2  6A29               	clrf	??_send_nibble& (0+255),c
+  1110  0009D4  2A29               	incf	??_send_nibble& (0+255),f,c
+  1111  0009D6  D001               	goto	u228
+  1112  0009D8                     u210:
+  1113  0009D8  6A29               	clrf	??_send_nibble& (0+255),c
+  1114  0009DA                     u228:
+  1115  0009DA  4629               	rlncf	??_send_nibble,f,c
+  1116  0009DC  508B               	movf	3979,w,c	;volatile
+  1117  0009DE  1829               	xorwf	??_send_nibble,w,c
+  1118  0009E0  0BFD               	andlw	-3
+  1119  0009E2  1829               	xorwf	??_send_nibble,w,c
+  1120  0009E4  6E8B               	movwf	3979,c	;volatile
+  1121                           
+  1122                           ;main.c: 92: __nop();
+  1123  0009E6  F000               	nop	
+  1124                           
+  1125                           ;main.c: 93: LATCbits.LC0 = 1;
+  1126  0009E8  808B               	bsf	3979,0,c	;volatile
+  1127                           
+  1128                           ;main.c: 94: __nop();
+  1129  0009EA  F000               	nop	
+  1130                           
+  1131                           ;main.c: 95: LATD = 0x0F & data;
+  1132  0009EC  5028               	movf	send_nibble@data,w,c
+  1133  0009EE  0B0F               	andlw	15
+  1134  0009F0  6E8C               	movwf	3980,c	;volatile
+  1135                           
+  1136                           ;main.c: 96: __nop();
+  1137  0009F2  F000               	nop	
+  1138                           
+  1139                           ;main.c: 97: LATCbits.LC0 = 0;
+  1140  0009F4  908B               	bcf	3979,0,c	;volatile
+  1141                           
+  1142                           ;main.c: 98: dic(20);
+  1143  0009F6  0E00               	movlw	0
+  1144  0009F8  6E27               	movwf	dic@t+1,c
+  1145  0009FA  0E14               	movlw	20
+  1146  0009FC  6E26               	movwf	dic@t,c
+  1147  0009FE  EC61  F005         	call	_dic	;wreg free
+  1148  000A02  0012               	return		;funcret
+  1149  000A04                     __end_of_send_nibble:
+  1150                           	opt stack 0
+  1151                           tblptru	equ	0xFF8
+  1152                           tblptrh	equ	0xFF7
+  1153                           tblptrl	equ	0xFF6
+  1154                           tablat	equ	0xFF5
+  1155                           prodh	equ	0xFF4
+  1156                           prodl	equ	0xFF3
+  1157                           postinc0	equ	0xFEE
+  1158                           wreg	equ	0xFE8
+  1159                           postdec1	equ	0xFE5
+  1160                           plusw1	equ	0xFE3
+  1161                           fsr1l	equ	0xFE1
+  1162                           indf2	equ	0xFDF
+  1163                           plusw2	equ	0xFDB
+  1164                           fsr2h	equ	0xFDA
+  1165                           fsr2l	equ	0xFD9
+  1166                           status	equ	0xFD8
+  1167                           
+  1168 ;; *************** function _dic *****************
+  1169 ;; Defined at:
+  1170 ;;		line 121 in file "main.c"
+  1171 ;; Parameters:    Size  Location     Type
+  1172 ;;  t               2    0[COMRAM] unsigned int 
+  1173 ;; Auto vars:     Size  Location     Type
+  1174 ;;		None
+  1175 ;; Return value:  Size  Location     Type
+  1176 ;;                  1    wreg      void 
+  1177 ;; Registers used:
+  1178 ;;		wreg, status,2, status,0
+  1179 ;; Tracked objects:
+  1180 ;;		On entry : 0/0
+  1181 ;;		On exit  : 0/0
+  1182 ;;		Unchanged: 0/0
+  1183 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+  1184 ;;      Params:         2       0       0       0       0       0       0       0       0
+  1185 ;;      Locals:         0       0       0       0       0       0       0       0       0
+  1186 ;;      Temps:          0       0       0       0       0       0       0       0       0
+  1187 ;;      Totals:         2       0       0       0       0       0       0       0       0
+  1188 ;;Total ram usage:        2 bytes
+  1189 ;; Hardware stack levels used:    1
+  1190 ;; This function calls:
+  1191 ;;		Nothing
+  1192 ;; This function is called by:
+  1193 ;;		_send_nibble
+  1194 ;; This function uses a non-reentrant model
+  1195 ;;
+  1196                           
+  1197                           	psect	text8
+  1198  000AC2                     __ptext8:
+  1199                           	opt stack 0
+  1200  000AC2                     _dic:
+  1201                           	opt stack 27
+  1202                           
+  1203                           ;main.c: 122: while(t--)
+  1204                           
+  1205                           ;incstack = 0
+  1206  000AC2  D001               	goto	l86
+  1207  000AC4                     l87:
+  1208                           
+  1209                           ;main.c: 123: __nop();
+  1210  000AC4  F000               	nop	
+  1211  000AC6                     l86:
+  1212  000AC6  0626               	decf	dic@t,f,c
+  1213  000AC8  A0D8               	btfss	status,0,c
+  1214  000ACA  0627               	decf	dic@t+1,f,c
+  1215  000ACC  2826               	incf	dic@t,w,c
+  1216  000ACE  E1FA               	bnz	l87
+  1217  000AD0  2827               	incf	dic@t+1,w,c
+  1218  000AD2  B4D8               	btfsc	status,2,c
+  1219  000AD4  0012               	return	
+  1220  000AD6  D7F6               	goto	l87
+  1221  000AD8                     __end_of_dic:
+  1222                           	opt stack 0
+  1223                           tblptru	equ	0xFF8
+  1224                           tblptrh	equ	0xFF7
+  1225                           tblptrl	equ	0xFF6
+  1226                           tablat	equ	0xFF5
+  1227                           prodh	equ	0xFF4
+  1228                           prodl	equ	0xFF3
+  1229                           postinc0	equ	0xFEE
+  1230                           wreg	equ	0xFE8
+  1231                           postdec1	equ	0xFE5
+  1232                           plusw1	equ	0xFE3
+  1233                           fsr1l	equ	0xFE1
+  1234                           indf2	equ	0xFDF
+  1235                           plusw2	equ	0xFDB
+  1236                           fsr2h	equ	0xFDA
+  1237                           fsr2l	equ	0xFD9
+  1238                           status	equ	0xFD8
+  1239                           tblptru	equ	0xFF8
+  1240                           tblptrh	equ	0xFF7
+  1241                           tblptrl	equ	0xFF6
+  1242                           tablat	equ	0xFF5
+  1243                           prodh	equ	0xFF4
+  1244                           prodl	equ	0xFF3
+  1245                           postinc0	equ	0xFEE
+  1246                           wreg	equ	0xFE8
+  1247                           postdec1	equ	0xFE5
+  1248                           plusw1	equ	0xFE3
+  1249                           fsr1l	equ	0xFE1
+  1250                           indf2	equ	0xFDF
+  1251                           plusw2	equ	0xFDB
+  1252                           fsr2h	equ	0xFDA
+  1253                           fsr2l	equ	0xFD9
+  1254                           status	equ	0xFD8
+  1255                           
+  1256                           	psect	rparam
+  1257  0000                     tblptru	equ	0xFF8
+  1258                           tblptrh	equ	0xFF7
+  1259                           tblptrl	equ	0xFF6
+  1260                           tablat	equ	0xFF5
+  1261                           prodh	equ	0xFF4
+  1262                           prodl	equ	0xFF3
+  1263                           postinc0	equ	0xFEE
+  1264                           wreg	equ	0xFE8
+  1265                           postdec1	equ	0xFE5
+  1266                           plusw1	equ	0xFE3
+  1267                           fsr1l	equ	0xFE1
+  1268                           indf2	equ	0xFDF
+  1269                           plusw2	equ	0xFDB
+  1270                           fsr2h	equ	0xFDA
+  1271                           fsr2l	equ	0xFD9
+  1272                           status	equ	0xFD8
+
+
+Data Sizes:
+    Strings     0
+    Constant    8
+    Data        37
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM           95     29      66
+    BANK0           160      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+    BANK6           256      0       0
+    BANK7           256      0       0
+
+Pointer List with Targets:
+
+    set_sgram_char@ptr	PTR unsigned char  size(2) Largest target is 24
+		 -> anima(COMRAM[24]), 
+
+
+Critical Paths under _main in COMRAM
+
+    _main->_lcd_gotoxy
+    _set_sgram_char->_send_byte
+    _lcd_init->_send_byte
+    _lcd_gotoxy->_send_byte
+    _send_byte->_send_nibble
+    _send_nibble->_dic
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Critical Paths under _main in BANK6
+
+    None.
+
+Critical Paths under _main in BANK7
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                17    17      0    5305
+                                             12 COMRAM    17    17      0
+                         _lcd_gotoxy
+                           _lcd_init
+                          _send_byte
+                     _set_sgram_char
+                              _setup
+ ---------------------------------------------------------------------------------
+ (1) _setup                                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _set_sgram_char                                       4     2      2    1235
+                                              7 COMRAM     4     2      2
+                          _send_byte
+ ---------------------------------------------------------------------------------
+ (1) _lcd_init                                             2     2      0    1594
+                                              7 COMRAM     2     2      0
+                        _output_data
+                          _send_byte
+                        _send_nibble
+ ---------------------------------------------------------------------------------
+ (2) _output_data                                          1     1      0      44
+                                              0 COMRAM     1     1      0
+ ---------------------------------------------------------------------------------
+ (1) _lcd_gotoxy                                           5     4      1    1234
+                                              7 COMRAM     5     4      1
+                          _send_byte
+ ---------------------------------------------------------------------------------
+ (2) _send_byte                                            2     1      1     990
+                                              5 COMRAM     2     1      1
+                        _send_nibble
+ ---------------------------------------------------------------------------------
+ (3) _send_nibble                                          3     2      1     446
+                                              2 COMRAM     3     2      1
+                                _dic
+ ---------------------------------------------------------------------------------
+ (4) _dic                                                  2     0      2      98
+                                              0 COMRAM     2     0      2
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 4
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _lcd_gotoxy
+     _send_byte
+       _send_nibble
+         _dic
+   _lcd_init
+     _output_data
+     _send_byte
+       _send_nibble
+         _dic
+     _send_nibble
+       _dic
+   _send_byte
+     _send_nibble
+       _dic
+   _set_sgram_char
+     _send_byte
+       _send_nibble
+         _dic
+   _setup
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             7FF      0       0      21        0.0%
+EEDATA             100      0       0       0        0.0%
+BITBANK7           100      0       0      18        0.0%
+BANK7              100      0       0      19        0.0%
+BITBANK6           100      0       0      16        0.0%
+BANK6              100      0       0      17        0.0%
+BITBANK5           100      0       0      14        0.0%
+BANK5              100      0       0      15        0.0%
+BITBANK4           100      0       0      12        0.0%
+BANK4              100      0       0      13        0.0%
+BITBANK3           100      0       0      10        0.0%
+BANK3              100      0       0      11        0.0%
+BITBANK2           100      0       0       8        0.0%
+BANK2              100      0       0       9        0.0%
+BITBANK1           100      0       0       6        0.0%
+BANK1              100      0       0       7        0.0%
+BITBANK0            A0      0       0       4        0.0%
+BANK0               A0      0       0       5        0.0%
+BITCOMRAM           5F      0       0       0        0.0%
+COMRAM              5F     1D      42       1       69.5%
+BITSFR               0      0       0     200        0.0%
+SFR                  0      0       0     200        0.0%
+STACK                0      0       0       2        0.0%
+NULL                 0      0       0       0        0.0%
+ABS                  0      0      42      20        0.0%
+DATA                 0      0      42       3        0.0%
+CODE                 0      0       0       0        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V1.45 build -152302408 
+Symbol Table                                                                                   Fri Mar 23 02:01:08 2018
+
+                     l51 087C                       l62 08FE                       l54 0896  
+                     l64 0942                       l56 08AE                       l49 083A  
+                     l93 0A42                       l86 0AC6                       l78 09AE  
+                     l87 0AC4              __CFG_BORV$3 000000             __CFG_CP0$OFF 000000  
+           __CFG_CP1$OFF 000000             __CFG_CP2$OFF 000000             __CFG_CP3$OFF 000000  
+                    l902 08F6                      l920 093A                      l952 09A6  
+                    l990 0874                      l974 0832             __CFG_CPB$OFF 000000  
+                    u210 09D8                      u301 0818                      u240 091C  
+                    u320 0858                      u228 09DA                      u260 0972  
+                    u340 088A                      u407 08EA                      u417 090E  
+                    u370 08C4             __CFG_CPD$OFF 000000                      u427 092C  
+                    u437 0964                      u447 0978                      u397 08B4  
+           __CFG_BOR$OFF 000000                      _dic 0AC2                      prod 000FF3  
+                    wreg 000FE8             __CFG_FOSC$HS 000000              lcd_gotoxy@x 002E  
+            lcd_gotoxy@y 002D             __CFG_LVP$OFF 000000             __CFG_WDT$OFF 000000  
+                   l1002 088E                     l1008 089E                     ?_dic 0026  
+                   _LATA 000F89                     _LATC 000F8B                     _LATD 000F8C  
+            _output_data 0AD8                     dic@t 0026                     _main 080A  
+            main@my_name 0033                     fsr2h 000FDA                     indf2 000FDF  
+                   fsr1l 000FE1                     fsr2l 000FD9                     prodh 000FF4  
+                   prodl 000FF3                     start 0000            __CFG_IESO$OFF 000000  
+          __CFG_MCLRE$ON 000000             ___param_bank 000000                    ??_dic 0028  
+          __CFG_PLLDIV$1 000000           __CFG_CCP2MX$ON 000000                    ?_main 0026  
+                  _CMCON 000FB4            __CFG_USBDIV$1 000000                    _TRISA 000F92  
+                  _TRISC 000F94                    _TRISD 000F95            __CFG_PWRT$OFF 000000  
+          __CFG_WRT0$OFF 000000          send_byte@comand 002C            __CFG_WRT1$OFF 000000  
+          __CFG_WRT2$OFF 000000            __CFG_WRT3$OFF 000000           __CFG_EBTR0$OFF 000000  
+         __CFG_FCMEN$OFF 000000           __CFG_EBTR1$OFF 000000           __CFG_EBTR2$OFF 000000  
+         __CFG_EBTR3$OFF 000000            __CFG_WRTB$OFF 000000            __CFG_WRTC$OFF 000000  
+          __CFG_WRTD$OFF 000000           __CFG_EBTRB$OFF 000000                    _anima 000E  
+                  _setup 0A86                    main@i 0042                    main@j 0040  
+                  tablat 000FF5          send_nibble@data 0028                    plusw1 000FE3  
+                  plusw2 000FDB                    status 000FD8           __CFG_ICPRT$OFF 000000  
+        __initialization 0A04             __end_of_main 08DE                   ??_main 0032  
+          __activetblptr 000001                   _ADCON1 000FC1             ?_send_nibble 0028  
+                 ?_setup 0026           __CFG_XINST$OFF 000000         __end_of_lcd_init 0984  
+         __CFG_STVREN$ON 000000             __pdataCOMRAM 0001             __mediumconst 0000  
+                 tblptrh 000FF7                   tblptrl 000FF6                   tblptru 000FF8  
+        set_sgram_char@i 0030               __accesstop 0060  __end_of__initialization 0A24  
+        __CFG_PBADEN$OFF 000000            ___rparam_used 000001           __pcstackCOMRAM 0026  
+          __end_of_setup 0AA8        lcd_gotoxy@address 0031                  ??_setup 0026  
+           ?_output_data 0026  __size_of_set_sgram_char 0044       __size_of_send_byte 001A  
+             _lcd_gotoxy 0A32                ?_lcd_init 0026          __CFG_VREGEN$OFF 000000  
+   __size_of_send_nibble 003C                  __Hparam 0000                  __Lparam 0000  
+           __psmallconst 0800                  __pcinit 0A04                  __ramtop 0800  
+                __ptext0 080A                  __ptext1 0A86                  __ptext2 0984  
+                __ptext3 08DE                  __ptext4 0AD8                  __ptext5 0A32  
+                __ptext6 0AA8                  __ptext7 09C8                  __ptext8 0AC2  
+           __size_of_dic 0016               ??_lcd_init 002D     end_of_initialization 0A24  
+      __end_of_send_byte 0AC2        send_nibble@comand 002A                  postdec1 000FE5  
+                postinc0 000FEE              ?_lcd_gotoxy 002D            send_byte@data 002B  
+   __size_of_output_data 0012           _set_sgram_char 0984            __pidataCOMRAM 0A60  
+    start_initialization 0A04              __end_of_dic 0AD8   __end_of_set_sgram_char 09C8  
+    __size_of_lcd_gotoxy 002E         __CFG_LPT1OSC$OFF 000000        __size_of_lcd_init 00A6  
+        ?_set_sgram_char 002D      __end_of_INIT_STRING 0809          output_data@data 0026  
+            __smallconst 0800            ??_send_nibble 0029           __size_of_setup 0022  
+               _LATCbits 000F8B                _send_byte 0AA8         __CFG_WDTPS$32768 000000  
+              main@F3814 0001                lcd_init@i 002E             ??_lcd_gotoxy 002E  
+              copy_data0 0A18              _INIT_STRING 0801      __end_of_send_nibble 0A04  
+             ?_send_byte 002B                 __Hrparam 0000                 __Lrparam 0000  
+           __Lsmallconst 0800       __end_of_lcd_gotoxy 0A60                 _lcd_init 08DE  
+          ??_output_data 0026            __size_of_main 00D4           _lcd_gotoxy$152 002F  
+  __CFG_CPUDIV$OSC1_PLL2 000000              _send_nibble 09C8         ??_set_sgram_char 002F  
+            ??_send_byte 002C      __end_of_output_data 0AEA        set_sgram_char@dir 002F  
+      set_sgram_char@ptr 002D  
