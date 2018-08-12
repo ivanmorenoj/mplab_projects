@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Mon May 28 01:13:06 2018
+                                                                                               Tue Jun 05 07:57:36 2018
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	18F4550
@@ -15,10 +15,10 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
      9                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
     10                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
     11  0000                     
-    12                           ; Version 1.45
-    13                           ; Generated 16/11/2017 GMT
+    12                           ; Version 1.45 (B)
+    13                           ; Generated 30/01/2018 GMT
     14                           ; 
-    15                           ; Copyright © 2017, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    15                           ; Copyright © 2018, Microchip Technology Inc. and its subsidiaries ("Microchip")
     16                           ; All rights reserved.
     17                           ; 
     18                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
@@ -148,8 +148,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    134  007FCA  6001               	cpfslt	main@var,c
    135  007FCC  D002               	goto	l30
    136                           
-   137                           ;main.c: 26: LATD = 0xC0;
-   138  007FCE  0EC0               	movlw	192
+   137                           ;main.c: 26: LATD = 0x01;
+   138  007FCE  0E01               	movlw	1
    139  007FD0  D015               	goto	L5
    140  007FD2                     l30:
    141                           
@@ -158,8 +158,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    144  007FD4  6001               	cpfslt	main@var,c
    145  007FD6  D002               	goto	l32
    146                           
-   147                           ;main.c: 28: LATD = 0xF9;
-   148  007FD8  0EF9               	movlw	249
+   147                           ;main.c: 28: LATD = 0x02;
+   148  007FD8  0E02               	movlw	2
    149  007FDA  D010               	goto	L5
    150  007FDC                     l32:
    151                           
@@ -168,8 +168,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    154  007FDE  6001               	cpfslt	main@var,c
    155  007FE0  D002               	goto	l34
    156                           
-   157                           ;main.c: 30: LATD = 0xA4;
-   158  007FE2  0EA4               	movlw	164
+   157                           ;main.c: 30: LATD = 0x04;
+   158  007FE2  0E04               	movlw	4
    159  007FE4  D00B               	goto	L5
    160  007FE6                     l34:
    161                           
@@ -178,8 +178,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    164  007FE8  6001               	cpfslt	main@var,c
    165  007FEA  D002               	goto	l36
    166                           
-   167                           ;main.c: 32: LATD = 0xB0;
-   168  007FEC  0EB0               	movlw	176
+   167                           ;main.c: 32: LATD = 0x08;
+   168  007FEC  0E08               	movlw	8
    169  007FEE  D006               	goto	L5
    170  007FF0                     l36:
    171                           
@@ -188,14 +188,14 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    174  007FF2  6001               	cpfslt	main@var,c
    175  007FF4  D002               	goto	l38
    176                           
-   177                           ;main.c: 34: LATD = 0x99;
-   178  007FF6  0E99               	movlw	153
+   177                           ;main.c: 34: LATD = 0x10;
+   178  007FF6  0E10               	movlw	16
    179  007FF8  D001               	goto	L5
    180  007FFA                     l38:
    181                           
    182                           ;main.c: 35: else
-   183                           ;main.c: 36: LATD = 0x92;
-   184  007FFA  0E92               	movlw	146
+   183                           ;main.c: 36: LATD = 0x20;
+   184  007FFA  0E20               	movlw	32
    185  007FFC                     L5:
    186  007FFC  6E8C               	movwf	3980,c	;volatile
    187                           
@@ -382,7 +382,7 @@ SFR                  0      0       0     200        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Mon May 28 01:13:06 2018
+Symbol Table                                                                                   Tue Jun 05 07:57:36 2018
 
                      l30 7FD2                       l32 7FDC                       l34 7FE6  
                      l26 7FBE                       l36 7FF0                       l28 7FC0  

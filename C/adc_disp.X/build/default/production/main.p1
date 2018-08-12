@@ -3693,48 +3693,48 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 25: if(var< 51)
 "25
 [e $ ! < -> _var `i -> 51 `i 370  ]
-[; ;main.c: 26: LATD = 0xC0;
+[; ;main.c: 26: LATD = 0x01;
 "26
-[e = _LATD -> -> 192 `i `uc ]
+[e = _LATD -> -> 1 `i `uc ]
 [e $U 371  ]
 "27
 [e :U 370 ]
 [; ;main.c: 27: else if(var< 102)
 [e $ ! < -> _var `i -> 102 `i 372  ]
-[; ;main.c: 28: LATD = 0xF9;
+[; ;main.c: 28: LATD = 0x02;
 "28
-[e = _LATD -> -> 249 `i `uc ]
+[e = _LATD -> -> 2 `i `uc ]
 [e $U 373  ]
 "29
 [e :U 372 ]
 [; ;main.c: 29: else if(var< 153)
 [e $ ! < -> _var `i -> 153 `i 374  ]
-[; ;main.c: 30: LATD = 0xA4;
+[; ;main.c: 30: LATD = 0x04;
 "30
-[e = _LATD -> -> 164 `i `uc ]
+[e = _LATD -> -> 4 `i `uc ]
 [e $U 375  ]
 "31
 [e :U 374 ]
 [; ;main.c: 31: else if(var< 204)
 [e $ ! < -> _var `i -> 204 `i 376  ]
-[; ;main.c: 32: LATD = 0xB0;
+[; ;main.c: 32: LATD = 0x08;
 "32
-[e = _LATD -> -> 176 `i `uc ]
+[e = _LATD -> -> 8 `i `uc ]
 [e $U 377  ]
 "33
 [e :U 376 ]
 [; ;main.c: 33: else if(var< 250)
 [e $ ! < -> _var `i -> 250 `i 378  ]
-[; ;main.c: 34: LATD = 0x99;
+[; ;main.c: 34: LATD = 0x10;
 "34
-[e = _LATD -> -> 153 `i `uc ]
+[e = _LATD -> -> 16 `i `uc ]
 [e $U 379  ]
 "35
 [e :U 378 ]
 [; ;main.c: 35: else
-[; ;main.c: 36: LATD = 0x92;
+[; ;main.c: 36: LATD = 0x20;
 "36
-[e = _LATD -> -> 146 `i `uc ]
+[e = _LATD -> -> 32 `i `uc ]
 [e :U 379 ]
 [e :U 377 ]
 [e :U 375 ]

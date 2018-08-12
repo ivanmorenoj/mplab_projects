@@ -1,0 +1,83 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sun Jun 03 23:02:11 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                 RES_VECT       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                   .org_0       code   0x000008    program   0x000004
+                   .org_3       code   0x000100    program   0x00003c
+                   .org_1       code   0x001000    program   0x000146
+                   .org_2       code   0x001200    program   0x00000c
+.config_300000_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000b      
+                            0x000100    0x00013b      
+                            0x001000    0x001145      
+                            0x001200    0x00120b      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            420 out of 33048 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               DelayOneMs   0x0010b0    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                  Display   0x001034    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                 ISR_HIGH   0x000100    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+          Increment_clock   0x0010c6    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                    START   0x001000    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                 TMR0_ISR   0x00010e    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                 TMR1_ISR   0x000132    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                  cmpnum4   0x001102    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+        config_interrupts   0x00110e    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+             config_ports   0x00112c    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                     loop   0x00102c    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                    num10   0x00012c    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+               ptr_w_latd   0x0010a6    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                     ret1   0x0010b4    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                     ret2   0x0010b8    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 ISR_HIGH   0x000100    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                 TMR0_ISR   0x00010e    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                    num10   0x00012c    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                 TMR1_ISR   0x000132    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                    START   0x001000    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                     loop   0x00102c    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                  Display   0x001034    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+               ptr_w_latd   0x0010a6    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+               DelayOneMs   0x0010b0    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                     ret1   0x0010b4    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                     ret2   0x0010b8    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+          Increment_clock   0x0010c6    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+                  cmpnum4   0x001102    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+        config_interrupts   0x00110e    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+             config_ports   0x00112c    program     static C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\ASM\clock_d.X\main.asm
+
+

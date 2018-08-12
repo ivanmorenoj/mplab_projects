@@ -12,7 +12,7 @@ typedef struct{
 } tm;
 //
 tm clock = {0,0,0,0};
-unsigned int count;
+unsigned char count;
 unsigned char flagStatus;
 char count_rbnd;
 bit flag_t;
@@ -38,10 +38,8 @@ void interrupt high_priority ISR(){
     INTCONbits.TMR0IF = 0;
     flag_t = 1;
     ++count_rbnd;
-    if(++count>499){
-        count = 0;
+    if(count++)
       clock.blink = !clock.blink;
-    }
   }
   if(!PORTAbits.RA1 && count_rbnd>REBOUND){
     count_rbnd = 0;
@@ -105,6 +103,7 @@ void wait_timer(unsigned char n){
 void show_count(unsigned char *ptr){
   const char * dectoDy = "\xC0\xF9\xA4\xB0\x99\x92\x82\xF8\x80\x98\xBF\xFF";
   for(unsigned char i = 0,a=1;i<8;a<<=1,i++){
+    LATB = 0xFF;
     if(*ptr>11){
       LATD = *(dectoDy + (*ptr++ - 12)) & 0x7F;
     }else

@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+$C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
@@ -58,39 +58,39 @@ MEDIUMCONST 800-7F99 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\adc_disp.X.production.obj
-7FA0 text1 CODE >10:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FA0 text1 CODE >11:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FA4 text1 CODE >12:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FA8 text1 CODE >13:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FAC text1 CODE >14:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FB0 text1 CODE >15:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FB4 text1 CODE >16:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FB8 text1 CODE >17:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FBA text0 CODE >18:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FBA text0 CODE >19:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FBE text0 CODE >21:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FBE text0 CODE >22:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FC0 text0 CODE >23:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FC4 text0 CODE >24:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FC8 text0 CODE >25:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FCE text0 CODE >26:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FD2 text0 CODE >27:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FD8 text0 CODE >28:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FDC text0 CODE >29:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FE2 text0 CODE >30:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FE6 text0 CODE >31:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FEC text0 CODE >32:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FF0 text0 CODE >33:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FF6 text0 CODE >34:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FFA text0 CODE >35:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FFA text0 CODE >36:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7FFE text0 CODE >37:C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\adc_disp.X\main.c
-7F9A cinit CODE >486:C:\Users\ivan-\AppData\Local\Temp\s7p8.
-7F9A cinit CODE >488:C:\Users\ivan-\AppData\Local\Temp\s7p8.
-7F9A cinit CODE >491:C:\Users\ivan-\AppData\Local\Temp\s7p8.
-7F9A cinit CODE >497:C:\Users\ivan-\AppData\Local\Temp\s7p8.
-7F9A cinit CODE >499:C:\Users\ivan-\AppData\Local\Temp\s7p8.
-7F9C cinit CODE >500:C:\Users\ivan-\AppData\Local\Temp\s7p8.
+7FA0 text1 CODE >10:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FA0 text1 CODE >11:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FA4 text1 CODE >12:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FA8 text1 CODE >13:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FAC text1 CODE >14:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FB0 text1 CODE >15:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FB4 text1 CODE >16:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FB8 text1 CODE >17:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FBA text0 CODE >18:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FBA text0 CODE >19:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FBE text0 CODE >21:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FBE text0 CODE >22:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FC0 text0 CODE >23:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FC4 text0 CODE >24:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FC8 text0 CODE >25:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FCE text0 CODE >26:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FD2 text0 CODE >27:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FD8 text0 CODE >28:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FDC text0 CODE >29:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FE2 text0 CODE >30:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FE6 text0 CODE >31:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FEC text0 CODE >32:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FF0 text0 CODE >33:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FF6 text0 CODE >34:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FFA text0 CODE >35:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FFA text0 CODE >36:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7FFE text0 CODE >37:C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\C\adc_disp.X\main.c
+7F9A cinit CODE >486:C:\Users\ivan-\AppData\Local\Temp\s1gk.
+7F9A cinit CODE >488:C:\Users\ivan-\AppData\Local\Temp\s1gk.
+7F9A cinit CODE >491:C:\Users\ivan-\AppData\Local\Temp\s1gk.
+7F9A cinit CODE >497:C:\Users\ivan-\AppData\Local\Temp\s1gk.
+7F9A cinit CODE >499:C:\Users\ivan-\AppData\Local\Temp\s1gk.
+7F9C cinit CODE >500:C:\Users\ivan-\AppData\Local\Temp\s1gk.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -109,22 +109,22 @@ __Hspace_1 2 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\adc_disp.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\adc_disp.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\adc_disp.X.production.obj
 _LATC F8B 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 _LATD F8C 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+___sp 0 0 STACK 2 stack C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 _main 7FBA 0 CODE 0 text0 dist/default/production\adc_disp.X.production.obj
-start 0 0 CODE 0 init C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+start 0 0 CODE 0 init C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\adc_disp.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
-intlevel0 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
-intlevel1 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
-intlevel2 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
-intlevel3 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+__accesstop 60 0 ABS 0 - C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
+intlevel0 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
+intlevel1 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
+intlevel2 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
+intlevel3 0 0 CODE 0 text C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __CFG_USBDIV$1 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\adc_disp.X.production.obj
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
@@ -138,8 +138,8 @@ _ADCON0 FC2 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 _ADCON1 FC1 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 _ADCON2 FC0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\adc_disp.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\adc_disp.X.production.obj
 main@var 1 0 COMRAM 1 cstackCOMRAM dist/default/production\adc_disp.X.production.obj
@@ -172,7 +172,7 @@ __Htext0 0 0 ABS 0 text0 dist/default/production\adc_disp.X.production.obj
 __Htext1 0 0 ABS 0 text1 dist/default/production\adc_disp.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\adc_disp.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\adc_disp.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\adc_disp.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\adc_disp.X.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
@@ -236,8 +236,8 @@ __Lconfig 300000 0 CONFIG 0 config dist/default/production\adc_disp.X.production
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\adc_disp.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\adc_disp.X.production.obj
 __CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\adc_disp.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
-stacklo 60 0 ABS 0 - C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+stackhi 7FF 0 ABS 0 - C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
+stacklo 60 0 ABS 0 - C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __Lintcode 0 0 CODE 0 intcode dist/default/production\adc_disp.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\adc_disp.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\adc_disp.X.production.obj
@@ -260,7 +260,7 @@ __pcinit 7F9A 0 CODE 0 cinit dist/default/production\adc_disp.X.production.obj
 __ptext0 7FBA 0 CODE 0 text0 dist/default/production\adc_disp.X.production.obj
 __ptext1 7FA0 0 CODE 0 text1 dist/default/production\adc_disp.X.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\adc_disp.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\ivan-\AppData\Local\Temp\s7p8.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\ivan-\AppData\Local\Temp\s1gk.obj
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\adc_disp.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\adc_disp.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\adc_disp.X.production.obj

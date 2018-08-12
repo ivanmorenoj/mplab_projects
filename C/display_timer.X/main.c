@@ -1,88 +1,87 @@
-/*
- * File:   main.c
- * Author: ivan
- *
- * Created on May 26, 2018, 1:46 PM
- */
 #include "config.h"
-#define TL  0x58
-#define TH  0x9E
+////
+#define vT0L  0x78
+#define vT0H  0xEC
 
-const unsigned char dectoDy[] =
-{0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x98,0x88,0x03,0xC6,0xA1,0x86,0x8E};
-const unsigned char latval[] =
-{0x7F,0xBF,0xFE,0xFD};
-
-unsigned int count=0;
-unsigned char count_t=0;
-unsigned char numDisplay[4];
+unsigned int count=9950;
 bit flag_t;
-
+//
 void setup();
-void ntan(unsigned char * ptr,unsigned int num,unsigned char len);
+void num_to_arr_num(unsigned char * ptr,unsigned int num,unsigned char len);
+inline void clrf_ptr(unsigned char * ptr,unsigned char len,unsigned char v);
 void wait_timer(unsigned char);
 void show_count(unsigned char *);
-
+inline unsigned char dec_to_disp(unsigned char num);
+inline unsigned char select_disp(unsigned char dig);
+//
 void interrupt high_priority ISR(){
+  if(PIR1bits.TMR1IF){
+    TMR1H |= 0x80;
+    PIR1bits.TMR1IF = 0;
+    if(++count>9999)
+        count=0;
+  }
   if(INTCONbits.TMR0IF){
-    TMR0L =  TL;
-    TMR0H =  TH;
+    TMR0L =  vT0L;
+    TMR0H =  vT0H;
     INTCONbits.TMR0IF = 0;
     flag_t = 1;
-    if(++count_t>199){
-        count_t = 0;
-        if(++count>9999)
-          count = 0;
-    }
   }
 }
 void main(void) {
     setup();
+    unsigned char Display[8];
     for(;;){
-      ntan(numDisplay,count,4);
-      show_count(numDisplay);
+      num_to_arr_num(Display,count,8);
+      show_count(Display);
     }
 }
-
 void setup(){
   INTCONbits.GIEH=0;         //Desactiva el sistema global de interrupciones
-
   ADCON1 = 0x0F;
   CMCON = 0x07;
-
+  TRISA = 0xFF;
   TRISD = 0x00;
-  TRISC = 0b00111100;
-
+  TRISB = 0x00;
+  LATA = LATB = 0xFF;
   T0CON = 0b10001000;        //Configura el timer0
-
   INTCONbits.TMR0IF = 0;     //Pone en cero la bandera de TMR0 para que no acceda
   INTCONbits.TMR0IE = 1;     //Habilita la interrupcion en TMR0
   INTCON2bits.TMR0IP = 1;    //Alta prioridad
-
+  T1CON = 0b00001011;        //Configura el timer0
+  PIR1bits.TMR1IF = 0;     //Pone en cero la bandera de TMR0 para que no acceda
+  PIE1bits.TMR1IE = 1;     //Habilita la interrupcion en TMR0
+  IPR1bits.TMR1IP = 1;    //Alta prioridad
   RCONbits.IPEN = 1;          //Habilita las prioridades
-  flag_t = 1;
-
   INTCONbits.GIEL = 0;        //desabilita las interrupciones de baja prioridad
   INTCONbits.GIEH = 1;        //Habilita el sistema global de interrupciones
-
+  flag_t = 1;
+  TMR1L = 0;
 }
-void ntan(unsigned char * ptr,unsigned int num,unsigned char len){
-    unsigned char index = 0;
-    for(;len>0;*(ptr + --len)=0);
-    for(;num>9;*(ptr + index++) = num%10,num/=10);
-    *(ptr + index) = num%10;
+inline void clrf_ptr(unsigned char * ptr,unsigned char len,unsigned char v){
+    while(--len)  *(ptr + len) = v;
 }
-
+void num_to_arr_num(unsigned char * ptr,unsigned int num,unsigned char len){
+    for(clrf_ptr(ptr,len,11);num>9;*ptr++ = num%10,num/=10);
+    *ptr = num%10;
+}
 void wait_timer(unsigned char n){
   for(;n;n--){
-    while(!flag_t);
+    while(!flag_t)  NOP();
     flag_t = 0;
   }
 }
 void show_count(unsigned char *ptr){
-  for(unsigned char i = 0;i<4;++i){
-    LATC = *(latval + i);
-    LATD = *(dectoDy + *(ptr + i));
+  for(unsigned char i = 0;i<8;i++){
+    LATB = 0xFF;
+    LATD = dec_to_disp(*ptr++);
+    LATB = select_disp(i);
     wait_timer(1);
   }
+}
+inline unsigned char select_disp(unsigned char dig){
+  return (unsigned char)~(1<<dig); //0-7
+}
+inline unsigned char dec_to_disp(unsigned char num){
+  return *((unsigned char *)"\xC0\xF9\xA4\xB0\x99\x92\x82\xF8\x80\x98\xBF\xFF" + num);
 }

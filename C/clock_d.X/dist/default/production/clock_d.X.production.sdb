@@ -29,21 +29,21 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "28 C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\C\clock_d.X\main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
-"64
+"62
 [v _main main `(v  1 e 1 0 ]
-"72
+"70
 [v _setup setup `(v  1 e 1 0 ]
-"94
+"92
 [v _num_to_arr_num num_to_arr_num `(v  1 e 1 0 ]
-"99
+"97
 [v _wait_timer wait_timer `(v  1 e 1 0 ]
-"105
+"103
 [v _show_count show_count `(v  1 e 1 0 ]
-"116
+"115
 [v _make_disp_time make_disp_time `(v  1 e 1 0 ]
-"127
+"126
 [v _pp_time pp_time `(v  1 e 1 0 ]
-"132
+"131
 [v _pp_tm pp_tm `(uc  1 e 1 0 ]
 [s S117 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
@@ -241,66 +241,66 @@
 "14 C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\C\clock_d.X\main.c
 [v _clock clock `S21  1 e 4 0 ]
 "15
-[v _count count `ui  1 e 2 0 ]
+[v _count count `uc  1 e 1 0 ]
 "16
 [v _flagStatus flagStatus `uc  1 e 1 0 ]
 "17
 [v _count_rbnd count_rbnd `uc  1 e 1 0 ]
 "18
 [v _flag_t flag_t `b  1 e 0 0 ]
-"64
+"62
 [v _main main `(v  1 e 1 0 ]
 {
-"66
+"64
 [v main@Display Display `[8]uc  1 a 8 47 ]
-"71
+"69
 } 0
-"105
+"103
 [v _show_count show_count `(v  1 e 1 0 ]
 {
-"107
+"105
 [v show_count@i i `uc  1 a 1 36 ]
 [v show_count@a a `uc  1 a 1 33 ]
-"106
+"104
 [v show_count@dectoDy dectoDy `*.25Cuc  1 a 2 34 ]
-"105
+"103
 [v show_count@ptr ptr `*.39uc  1 p 2 25 ]
-"115
+"114
 } 0
-"99
+"97
 [v _wait_timer wait_timer `(v  1 e 1 0 ]
 {
 [v wait_timer@n n `uc  1 a 1 wreg ]
 [v wait_timer@n n `uc  1 a 1 wreg ]
 [v wait_timer@n n `uc  1 a 1 24 ]
-"104
+"102
 } 0
-"72
+"70
 [v _setup setup `(v  1 e 1 0 ]
 {
-"93
+"91
 } 0
-"116
+"115
 [v _make_disp_time make_disp_time `(v  1 e 1 0 ]
 {
-"124
+"123
 [v make_disp_time@k k `uc  1 a 1 46 ]
-"122
+"121
 [v make_disp_time@j j `uc  1 a 1 45 ]
 [v make_disp_time@i i `uc  1 a 1 44 ]
-"116
+"115
 [v make_disp_time@ptr ptr `*.39uc  1 p 2 36 ]
 [s S21 . 4 `uc 1 seg 1 0 `uc 1 min 1 1 `uc 1 hour 1 2 `uc 1 blink 1 3 ]
 [v make_disp_time@tm_ptr tm_ptr `*.39S21  1 p 2 38 ]
-"126
+"125
 } 0
-"94
+"92
 [v _num_to_arr_num num_to_arr_num `(v  1 e 1 0 ]
 {
 [v num_to_arr_num@ptr ptr `*.39uc  1 p 2 31 ]
 [v num_to_arr_num@num num `ui  1 p 2 33 ]
 [v num_to_arr_num@len len `uc  1 p 1 35 ]
-"98
+"96
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
@@ -327,20 +327,20 @@
 "28 C:\Users\ivan-\Documents\MEGA\Compartido\Microcontroladores\MPLAB\C\clock_d.X\main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
 {
-"63
+"61
 } 0
-"127
+"126
 [v _pp_time pp_time `(v  1 e 1 0 ]
 {
 [s S21 . 4 `uc 1 seg 1 0 `uc 1 min 1 1 `uc 1 hour 1 2 `uc 1 blink 1 3 ]
 [v pp_time@tm_ptr tm_ptr `*.39S21  1 p 2 4 ]
-"131
+"130
 } 0
-"132
+"131
 [v _pp_tm pp_tm `(uc  1 e 1 0 ]
 {
 [s S21 . 4 `uc 1 seg 1 0 `uc 1 min 1 1 `uc 1 hour 1 2 `uc 1 blink 1 3 ]
 [v pp_tm@tm_ptr tm_ptr `*.39S21  1 p 2 0 ]
 [v pp_tm@type type `uc  1 p 1 2 ]
-"151
+"150
 } 0

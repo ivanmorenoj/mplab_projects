@@ -1,0 +1,83 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Mon Jun 11 08:58:29 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                 RES_VECT       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                   .org_0       code   0x001000    program   0x000240
+.config_300000_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x001000    0x00123f      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            594 out of 33048 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   Acceso   0x00116c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 Acceso_d   0x00101e    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 Acceso_p   0x00102c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+              ConfigPorts   0x001152    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+               DelayOneMs   0x00112e    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+               Delay_by_w   0x001122    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+            Delay_ms_by_w   0x001144    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                   cdelay   0x001146    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 cicDelay   0x001124    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 denegado   0x0011fe    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                   inicio   0x001000    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 lcd_init   0x001084    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+            lcd_send_byte   0x001112    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+          lcd_send_nibble   0x0010fe    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                     loop   0x001008    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                permitido   0x0011b4    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                     ret1   0x001132    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                     ret2   0x001136    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   inicio   0x001000    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                     loop   0x001008    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 Acceso_d   0x00101e    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 Acceso_p   0x00102c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 lcd_init   0x001084    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+          lcd_send_nibble   0x0010fe    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+            lcd_send_byte   0x001112    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+               Delay_by_w   0x001122    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 cicDelay   0x001124    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+               DelayOneMs   0x00112e    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                     ret1   0x001132    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                     ret2   0x001136    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+            Delay_ms_by_w   0x001144    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                   cdelay   0x001146    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+              ConfigPorts   0x001152    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                   Acceso   0x00116c    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                permitido   0x0011b4    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+                 denegado   0x0011fe    program     static C:\Users\ivan-\Documents\MEGAsync\Microcontroladores\MPLAB\ASM\extra_4.X\main.asm
+
+

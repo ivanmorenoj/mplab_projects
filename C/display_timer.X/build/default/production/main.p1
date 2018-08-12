@@ -1,5 +1,18 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"8586 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+"4472 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[s S173 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S173 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
+"4482
+[s S174 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S174 . . TX1IF RC1IF . PSPIF ]
+"4471
+[u S172 `S173 1 `S174 1 ]
+[n S172 . . . ]
+"4490
+[v _PIR1bits `VS172 ~T0 @X0 0 e@3998 ]
+"7530
+[v _TMR1H `Vuc ~T0 @X0 0 e@4047 ]
+"8586
 [s S355 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S355 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "8596
@@ -18,20 +31,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 "8151
 [v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
 [p mainexit ]
-"21 main.c
+"9 main.c
 [v _setup `(v ~T0 @X0 0 ef ]
-"22
-[v _ntan `(v ~T0 @X0 0 ef3`*uc`ui`uc ]
-"24
+"10
+[v _num_to_arr_num `(v ~T0 @X0 0 ef3`*uc`ui`uc ]
+"13
 [v _show_count `(v ~T0 @X0 0 ef1`*uc ]
 "6579 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
 "5585
 [v _CMCON `Vuc ~T0 @X0 0 e@4020 ]
+"3425
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
 "3999
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
-"3845
-[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"3623
+[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
+"2971
+[v _LATA `Vuc ~T0 @X0 0 e@3977 ]
+"3071
+[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
 "8067
 [v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
 "8509
@@ -48,6 +67,30 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S350 . . . . ]
 "8530
 [v _INTCON2bits `VS350 ~T0 @X0 0 e@4081 ]
+"7413
+[v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
+"4388
+[s S170 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S170 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE SPPIE ]
+"4398
+[s S171 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S171 . . TX1IE RC1IE . PSPIE ]
+"4387
+[u S169 `S170 1 `S171 1 ]
+[n S169 . . . ]
+"4406
+[v _PIE1bits `VS169 ~T0 @X0 0 e@3997 ]
+"4556
+[s S176 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S176 . TMR1IP TMR2IP CCP1IP SSPIP TXIP RCIP ADIP SPPIP ]
+"4566
+[s S177 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S177 . . TX1IP RC1IP . PSPIP ]
+"4555
+[u S175 `S176 1 `S177 1 ]
+[n S175 . . . ]
+"4574
+[v _IPR1bits `VS175 ~T0 @X0 0 e@3999 ]
 "7543
 [s S317 :1 `uc 1 ]
 [n S317 . NOT_BOR ]
@@ -77,10 +120,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S316 . . . . . . . . . ]
 "7586
 [v _RCONbits `VS316 ~T0 @X0 0 e@4048 ]
-"3183
-[v _LATC `Vuc ~T0 @X0 0 e@3979 ]
-"3261
+"43 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"3261 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
 [v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+[v F3808 `(uc ~T0 @X0 1 tf1`uc ]
+"14 main.c
+[v _dec_to_disp `TF3808 ~T0 @X0 0 e ]
+[v F3811 `(uc ~T0 @X0 1 tf1`uc ]
+"15
+[v _select_disp `TF3811 ~T0 @X0 0 e ]
 "12 config.h
 [p x PLLDIV=1 ]
 "13
@@ -3667,308 +3717,333 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 164: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 166: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 168: extern __nonreentrant void _delay3(unsigned char);
-"11 main.c
-[v _dectoDy `Cuc ~T0 @X0 -> 0 `x e ]
-[i _dectoDy
-:U ..
-"12
--> -> 192 `i `uc
--> -> 249 `i `uc
--> -> 164 `i `uc
--> -> 176 `i `uc
--> -> 153 `i `uc
--> -> 146 `i `uc
--> -> 130 `i `uc
--> -> 248 `i `uc
--> -> 128 `i `uc
--> -> 152 `i `uc
--> -> 136 `i `uc
--> -> 3 `i `uc
--> -> 198 `i `uc
--> -> 161 `i `uc
--> -> 134 `i `uc
--> -> 142 `i `uc
-..
-]
-[; ;main.c: 11: const unsigned char dectoDy[] =
-[; ;main.c: 12: {0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x98,0x88,0x03,0xC6,0xA1,0x86,0x8E};
-"13
-[v _latval `Cuc ~T0 @X0 -> 0 `x e ]
-[i _latval
-:U ..
-"14
--> -> 127 `i `uc
--> -> 191 `i `uc
--> -> 254 `i `uc
--> -> 253 `i `uc
-..
-]
-[; ;main.c: 13: const unsigned char latval[] =
-[; ;main.c: 14: {0x7F,0xBF,0xFE,0xFD};
-"16
+"6 main.c
 [v _count `ui ~T0 @X0 1 e ]
 [i _count
--> -> 0 `i `ui
+-> -> 9950 `i `ui
 ]
-[; ;main.c: 16: unsigned int count=0;
-"17
-[v _count_t `uc ~T0 @X0 1 e ]
-[i _count_t
--> -> 0 `i `uc
-]
-[; ;main.c: 17: unsigned char count_t=0;
-"18
-[v _numDisplay `uc ~T0 @X0 -> 4 `i e ]
-[; ;main.c: 18: unsigned char numDisplay[4];
-"19
+[; ;main.c: 6: unsigned int count=9950;
+"7
 [v _flag_t `b ~T0 @X0 1 e ]
-[; ;main.c: 19: bit flag_t;
-[; ;main.c: 21: void setup();
-[; ;main.c: 22: void ntan(unsigned char * ptr,unsigned int num,unsigned char len);
-[; ;main.c: 23: void wait_timer(unsigned char);
-[; ;main.c: 24: void show_count(unsigned char *);
+[; ;main.c: 7: bit flag_t;
+[; ;main.c: 9: void setup();
+[; ;main.c: 10: void num_to_arr_num(unsigned char * ptr,unsigned int num,unsigned char len);
+[; ;main.c: 11: inline void clrf_ptr(unsigned char * ptr,unsigned char len,unsigned char v);
+[; ;main.c: 12: void wait_timer(unsigned char);
+[; ;main.c: 13: void show_count(unsigned char *);
+[; ;main.c: 14: inline unsigned char dec_to_disp(unsigned char num);
+[; ;main.c: 15: inline unsigned char select_disp(unsigned char dig);
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-[v F3806 `(v ~T0 @X0 1 tf ]
-"26
-[v _ISR `IHF3806 ~T0 @X0 1 e ]
+[v F3813 `(v ~T0 @X0 1 tf ]
+"17
+[v _ISR `IHF3813 ~T0 @X0 1 e ]
 {
-[; ;main.c: 26: void interrupt high_priority ISR(){
+[; ;main.c: 17: void interrupt high_priority ISR(){
 [e :U _ISR ]
 [f ]
-[; ;main.c: 27: if(INTCONbits.TMR0IF){
-"27
-[e $ ! != -> . . _INTCONbits 0 2 `i -> -> -> 0 `i `Vuc `i 363  ]
+[; ;main.c: 18: if(PIR1bits.TMR1IF){
+"18
+[e $ ! != -> . . _PIR1bits 0 0 `i -> -> -> 0 `i `Vuc `i 363  ]
 {
-[; ;main.c: 28: TMR0L = 0x58;
-"28
-[e = _TMR0L -> -> 88 `i `uc ]
-[; ;main.c: 29: TMR0H = 0x9E;
-"29
-[e = _TMR0H -> -> 158 `i `uc ]
-[; ;main.c: 30: INTCONbits.TMR0IF = 0;
-"30
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 31: flag_t = 1;
-"31
-[e = _flag_t -> -> 1 `i `b ]
-[; ;main.c: 32: if(++count_t>199){
-"32
-[e $ ! > -> =+ _count_t -> -> 1 `i `uc `i -> 199 `i 364  ]
-{
-[; ;main.c: 33: count_t = 0;
-"33
-[e = _count_t -> -> 0 `i `uc ]
-[; ;main.c: 34: if(++count>9999)
-"34
-[e $ ! > =+ _count -> -> 1 `i `ui -> -> 9999 `i `ui 365  ]
-[; ;main.c: 35: count = 0;
-"35
+[; ;main.c: 19: TMR1H |= 0x80;
+"19
+[e =| _TMR1H -> -> 128 `i `uc ]
+[; ;main.c: 20: PIR1bits.TMR1IF = 0;
+"20
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 21: if(++count>9999)
+"21
+[e $ ! > =+ _count -> -> 1 `i `ui -> -> 9999 `i `ui 364  ]
+[; ;main.c: 22: count=0;
+"22
 [e = _count -> -> 0 `i `ui ]
-[e :U 365 ]
-"36
-}
 [e :U 364 ]
-"37
+"23
 }
 [e :U 363 ]
-[; ;main.c: 36: }
-[; ;main.c: 37: }
-[; ;main.c: 38: }
-"38
+[; ;main.c: 23: }
+[; ;main.c: 24: if(INTCONbits.TMR0IF){
+"24
+[e $ ! != -> . . _INTCONbits 0 2 `i -> -> -> 0 `i `Vuc `i 365  ]
+{
+[; ;main.c: 25: TMR0L = 0x78;
+"25
+[e = _TMR0L -> -> 120 `i `uc ]
+[; ;main.c: 26: TMR0H = 0xEC;
+"26
+[e = _TMR0H -> -> 236 `i `uc ]
+[; ;main.c: 27: INTCONbits.TMR0IF = 0;
+"27
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 28: flag_t = 1;
+"28
+[e = _flag_t -> -> 1 `i `b ]
+"29
+}
+[e :U 365 ]
+[; ;main.c: 29: }
+[; ;main.c: 30: }
+"30
 [e :UE 362 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"39
+"31
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 39: void main(void) {
+[; ;main.c: 31: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 40: setup();
-"40
+[; ;main.c: 32: setup();
+"32
 [e ( _setup ..  ]
-[; ;main.c: 41: for(;;){
-"41
+"33
+[v _Display `uc ~T0 @X0 -> 8 `i a ]
+[; ;main.c: 33: unsigned char Display[8];
+[; ;main.c: 34: for(;;){
+"34
 {
 [e :U 367 ]
 {
-[; ;main.c: 42: ntan(numDisplay,count,4);
-"42
-[e ( _ntan (3 , , &U _numDisplay _count -> -> 4 `i `uc ]
-[; ;main.c: 43: show_count(numDisplay);
-"43
-[e ( _show_count (1 &U _numDisplay ]
-"44
+[; ;main.c: 35: num_to_arr_num(Display,count,8);
+"35
+[e ( _num_to_arr_num (3 , , &U _Display _count -> -> 8 `i `uc ]
+[; ;main.c: 36: show_count(Display);
+"36
+[e ( _show_count (1 &U _Display ]
+"37
 }
-[; ;main.c: 44: }
+[; ;main.c: 37: }
 [e $U 367  ]
 [e :U 368 ]
 }
-[; ;main.c: 45: }
-"45
+[; ;main.c: 38: }
+"38
 [e :UE 366 ]
 }
-"47
+"39
 [v _setup `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 47: void setup(){
+[; ;main.c: 39: void setup(){
 [e :U _setup ]
 [f ]
-[; ;main.c: 48: INTCONbits.GIEH=0;
-"48
+[; ;main.c: 40: INTCONbits.GIEH=0;
+"40
 [e = . . _INTCONbits 2 2 -> -> 0 `i `uc ]
-[; ;main.c: 50: ADCON1 = 0x0F;
-"50
+[; ;main.c: 41: ADCON1 = 0x0F;
+"41
 [e = _ADCON1 -> -> 15 `i `uc ]
-[; ;main.c: 51: CMCON = 0x07;
-"51
+[; ;main.c: 42: CMCON = 0x07;
+"42
 [e = _CMCON -> -> 7 `i `uc ]
-[; ;main.c: 53: TRISD = 0x00;
-"53
+[; ;main.c: 43: TRISA = 0xFF;
+"43
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;main.c: 44: TRISD = 0x00;
+"44
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;main.c: 54: TRISC = 0b00111100;
-"54
-[e = _TRISC -> -> 60 `i `uc ]
-[; ;main.c: 56: T0CON = 0b10001000;
-"56
+[; ;main.c: 45: TRISB = 0x00;
+"45
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;main.c: 46: LATA = LATB = 0xFF;
+"46
+[e = _LATA = _LATB -> -> 255 `i `uc ]
+[; ;main.c: 47: T0CON = 0b10001000;
+"47
 [e = _T0CON -> -> 136 `i `uc ]
-[; ;main.c: 58: INTCONbits.TMR0IF = 0;
-"58
+[; ;main.c: 48: INTCONbits.TMR0IF = 0;
+"48
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 59: INTCONbits.TMR0IE = 1;
-"59
+[; ;main.c: 49: INTCONbits.TMR0IE = 1;
+"49
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 60: INTCON2bits.TMR0IP = 1;
-"60
+[; ;main.c: 50: INTCON2bits.TMR0IP = 1;
+"50
 [e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
-[; ;main.c: 62: RCONbits.IPEN = 1;
-"62
+[; ;main.c: 51: T1CON = 0b00001011;
+"51
+[e = _T1CON -> -> 11 `i `uc ]
+[; ;main.c: 52: PIR1bits.TMR1IF = 0;
+"52
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 53: PIE1bits.TMR1IE = 1;
+"53
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 54: IPR1bits.TMR1IP = 1;
+"54
+[e = . . _IPR1bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 55: RCONbits.IPEN = 1;
+"55
 [e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;main.c: 63: flag_t = 1;
-"63
-[e = _flag_t -> -> 1 `i `b ]
-[; ;main.c: 65: INTCONbits.GIEL = 0;
-"65
+[; ;main.c: 56: INTCONbits.GIEL = 0;
+"56
 [e = . . _INTCONbits 2 1 -> -> 0 `i `uc ]
-[; ;main.c: 66: INTCONbits.GIEH = 1;
-"66
+[; ;main.c: 57: INTCONbits.GIEH = 1;
+"57
 [e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
-[; ;main.c: 68: }
-"68
+[; ;main.c: 58: flag_t = 1;
+"58
+[e = _flag_t -> -> 1 `i `b ]
+[; ;main.c: 59: }
+"59
 [e :UE 370 ]
 }
-"69
-[v _ntan `(v ~T0 @X0 1 ef3`*uc`ui`uc ]
+[v F3801 `(v ~T0 @X0 1 tf3`*uc`uc`uc ]
+"60
+[v _clrf_ptr `TF3801 ~T0 @X0 1 e ]
 {
-[; ;main.c: 69: void ntan(unsigned char * ptr,unsigned int num,unsigned char len){
-[e :U _ntan ]
+[; ;main.c: 60: inline void clrf_ptr(unsigned char * ptr,unsigned char len,unsigned char v){
+[e :U _clrf_ptr ]
+[v _ptr `*uc ~T0 @X0 1 r1 ]
+[v _len `uc ~T0 @X0 1 r2 ]
+[v _v `uc ~T0 @X0 1 r3 ]
+[f ]
+[; ;main.c: 61: while(--len) *(ptr + len) = v;
+"61
+[e $U 372  ]
+[e :U 373 ]
+[e = *U + _ptr * -> _len `ux -> -> # *U _ptr `ui `ux _v ]
+[e :U 372 ]
+[e $ != -> =- _len -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 373  ]
+[e :U 374 ]
+[; ;main.c: 62: }
+"62
+[e :UE 371 ]
+}
+"63
+[v _num_to_arr_num `(v ~T0 @X0 1 ef3`*uc`ui`uc ]
+{
+[; ;main.c: 63: void num_to_arr_num(unsigned char * ptr,unsigned int num,unsigned char len){
+[e :U _num_to_arr_num ]
 [v _ptr `*uc ~T0 @X0 1 r1 ]
 [v _num `ui ~T0 @X0 1 r2 ]
 [v _len `uc ~T0 @X0 1 r3 ]
 [f ]
-"70
-[v _index `uc ~T0 @X0 1 a ]
-[; ;main.c: 70: unsigned char index = 0;
-[e = _index -> -> 0 `i `uc ]
-[; ;main.c: 71: for(;len>0;*(ptr + --len)=0);
-"71
+[; ;main.c: 66: for(clrf_ptr(ptr,len,11);num>9;*ptr++ = num%10,num/=10);
+"66
 {
-[e $ > -> _len `i -> 0 `i 372  ]
-[e $U 373  ]
-[e :U 372 ]
-[e = *U + _ptr * -> =- _len -> -> 1 `i `uc `ux -> -> # *U _ptr `ui `ux -> -> 0 `i `uc ]
-[e $ > -> _len `i -> 0 `i 372  ]
-[e :U 373 ]
-}
-[; ;main.c: 72: for(;num>9;*(ptr + index++) = num%10,num/=10);
-"72
-{
-[e $ > _num -> -> 9 `i `ui 375  ]
-[e $U 376  ]
-[e :U 375 ]
-[e ; = *U + _ptr * -> ++ _index -> -> 1 `i `uc `ux -> -> # *U _ptr `ui `ux -> % _num -> -> 10 `i `ui `uc =/ _num -> -> 10 `uc `ui ]
-[e $ > _num -> -> 9 `i `ui 375  ]
+[e ( _clrf_ptr (3 , , _ptr _len -> -> 11 `i `uc ]
+[e $ > _num -> -> 9 `i `ui 376  ]
+[e $U 377  ]
 [e :U 376 ]
+[e ; = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> % _num -> -> 10 `i `ui `uc =/ _num -> -> 10 `uc `ui ]
+[e $ > _num -> -> 9 `i `ui 376  ]
+[e :U 377 ]
 }
-[; ;main.c: 73: *(ptr + index) = num%10;
-"73
-[e = *U + _ptr * -> _index `ux -> -> # *U _ptr `ui `ux -> % _num -> -> 10 `i `ui `uc ]
-[; ;main.c: 74: }
-"74
-[e :UE 371 ]
+[; ;main.c: 67: *ptr = num%10;
+"67
+[e = *U _ptr -> % _num -> -> 10 `i `ui `uc ]
+[; ;main.c: 68: }
+"68
+[e :UE 375 ]
 }
-"76
+"69
 [v _wait_timer `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;main.c: 76: void wait_timer(unsigned char n){
+[; ;main.c: 69: void wait_timer(unsigned char n){
 [e :U _wait_timer ]
 [v _n `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 77: for(;n;n--){
-"77
+[; ;main.c: 70: for(;n;n--){
+"70
 {
-[e $U 382  ]
-[e :U 379 ]
-{
-[; ;main.c: 78: while(!flag_t);
-"78
 [e $U 383  ]
-[e :U 384 ]
-[e :U 383 ]
-[e $ ! _flag_t 384  ]
-[e :U 385 ]
-[; ;main.c: 79: flag_t = 0;
-"79
-[e = _flag_t -> -> 0 `i `b ]
-"80
-}
-"77
-[e -- _n -> -> 1 `i `uc ]
-[e :U 382 ]
-[e $ != -> _n `i -> -> -> 0 `i `uc `i 379  ]
 [e :U 380 ]
-"80
+{
+[; ;main.c: 71: while(!flag_t) __nop();
+"71
+[e $U 384  ]
+[e :U 385 ]
+[e ( ___nop ..  ]
+[e :U 384 ]
+[e $ ! _flag_t 385  ]
+[e :U 386 ]
+[; ;main.c: 72: flag_t = 0;
+"72
+[e = _flag_t -> -> 0 `i `b ]
+"73
 }
-[; ;main.c: 80: }
-[; ;main.c: 81: }
-"81
-[e :UE 378 ]
+"70
+[e -- _n -> -> 1 `i `uc ]
+[e :U 383 ]
+[e $ != -> _n `i -> -> -> 0 `i `uc `i 380  ]
+[e :U 381 ]
+"73
 }
-"82
+[; ;main.c: 73: }
+[; ;main.c: 74: }
+"74
+[e :UE 379 ]
+}
+"75
 [v _show_count `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main.c: 82: void show_count(unsigned char *ptr){
+[; ;main.c: 75: void show_count(unsigned char *ptr){
 [e :U _show_count ]
 [v _ptr `*uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 83: for(unsigned char i = 0;i<4;++i){
-"83
+[; ;main.c: 76: for(unsigned char i = 0;i<8;i++){
+"76
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i -> 4 `i 387  ]
-[e $U 388  ]
-[e :U 387 ]
-{
-[; ;main.c: 84: LATC = *(latval + i);
-"84
-[e = _LATC *U + &U _latval * -> _i `ux -> -> # *U &U _latval `ui `ux ]
-[; ;main.c: 85: LATD = *(dectoDy + *(ptr + i));
-"85
-[e = _LATD *U + &U _dectoDy * -> *U + _ptr * -> _i `ux -> -> # *U _ptr `ui `ux `ux -> -> # *U &U _dectoDy `ui `ux ]
-[; ;main.c: 86: wait_timer(1);
-"86
-[e ( _wait_timer (1 -> -> 1 `i `uc ]
-"87
-}
-"83
-[e =+ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 4 `i 387  ]
+[e $ < -> _i `i -> 8 `i 388  ]
+[e $U 389  ]
 [e :U 388 ]
-"87
+{
+[; ;main.c: 77: LATB = 0xFF;
+"77
+[e = _LATB -> -> 255 `i `uc ]
+[; ;main.c: 78: LATD = dec_to_disp(*ptr++);
+"78
+[e = _LATD ( _dec_to_disp (1 *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
+[; ;main.c: 81: LATB = select_disp(i);
+"81
+[e = _LATB ( _select_disp (1 _i ]
+[; ;main.c: 82: wait_timer(1);
+"82
+[e ( _wait_timer (1 -> -> 1 `i `uc ]
+"83
 }
+"76
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 388  ]
+[e :U 389 ]
+"83
+}
+[; ;main.c: 83: }
+[; ;main.c: 84: }
+"84
+[e :UE 387 ]
+}
+"85
+[v _select_disp `TF3811 ~T0 @X0 1 e ]
+{
+[; ;main.c: 85: inline unsigned char select_disp(unsigned char dig){
+[e :U _select_disp ]
+[v _dig `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;main.c: 86: return (unsigned char)~(1<<dig);
+"86
+[e ) -> ~ << -> 1 `i _dig `uc ]
+[e $UE 391  ]
 [; ;main.c: 87: }
-[; ;main.c: 88: }
-"88
-[e :UE 386 ]
+"87
+[e :UE 391 ]
 }
+"88
+[v _dec_to_disp `TF3808 ~T0 @X0 1 e ]
+{
+[; ;main.c: 88: inline unsigned char dec_to_disp(unsigned char num){
+[e :U _dec_to_disp ]
+[v _num `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;main.c: 91: return *((unsigned char *)"\xC0\xF9\xA4\xB0\x99\x92\x82\xF8\x80\x98\xBF\xFF" + num);
+"91
+[e ) *U + -> :s 1C `*uc * -> _num `ux -> -> # *U -> :s 1C `*uc `ui `ux ]
+[e $UE 392  ]
+[; ;main.c: 92: }
+"92
+[e :UE 392 ]
+}
+[a 1C 192 249 164 176 153 146 130 248 128 152 191 255 0 ]
+

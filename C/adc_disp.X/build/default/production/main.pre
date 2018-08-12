@@ -4885,16 +4885,16 @@ ADCON0bits.GO = 1;
 while(!ADCON0bits.GO);
 var = ADRESH;
 if(var< 51)
-LATD = 0xC0;
+LATD = 0x01;
 else if(var< 102)
-LATD = 0xF9;
+LATD = 0x02;
 else if(var< 153)
-LATD = 0xA4;
+LATD = 0x04;
 else if(var< 204)
-LATD = 0xB0;
+LATD = 0x08;
 else if(var< 250)
-LATD = 0x99;
+LATD = 0x10;
 else
-LATD = 0x92;
+LATD = 0x20;
 }
 }
