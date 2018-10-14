@@ -1,4 +1,4 @@
-# MPLAB PROYECTS
+# MPLAB PROJECTS
 Examples of code in c and asm for basic practices
 
 Copyright (c) Ivan Moreno 2018
